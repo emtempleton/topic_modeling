@@ -1,0 +1,800 @@
+Haute Ecole Albert Jacquard
+Computer Graphics Group at Brown
+Computer Graphics Group at RWTH Aachen University
+Computer Graphics at Harvard
+Computer Graphics and Immersive Technologies Laboratory at USC
+Graphics Lab of Institute for Creative Technologies at USC
+Computer Graphics Laboratory at Korea Advanced Institute of Science and Technology (KAIST)
+Computer Graphics Group at PUC-Rio
+Computer Graphics Group at University of Bonn
+Computer Graphics Group at University of Virginia
+Computer Graphics Laboratory at University of Tokyo
+Computer Graphics Laboratory at UT Austin
+Computer Graphics Laboratory at ETH Zurich
+Computer Graphics / Geometric Design Group at Rice
+Computer Graphics and User Interfaces Lab at Columbia University
+High Performance Computer Graphics Lab at Purdue University
+Computer Graphics and Visualization Lab at Purdue University
+Computer Graphics and Visualization Lab at University of Utah
+Computer Graphics and Visualization Lab at University of Wisconsin
+Cornell University Program of Computer Graphics
+Dynamic Graphics Project at University of Toronto
+Geometric Modeling and Industrial Geometry Group at Technische Universitat Wien
+The Institute of Computer Graphics and Algorithms at Technische Universitat Wien
+Graphics and Image Analysis at UNC
+Graphics and Imaging Lab at Universidad de Zaragoza
+Graphics and Geomatics Group at Universidad de Jaén
+Graphics and Geometric Computing Group at Tsinghua University
+Graphics@Illinois
+GRAIL at University of Washington
+GRAVIR at iMAGIS
+GVIL at University of Maryland, College Park
+GVU Center at Georgia Tech
+IDAV Visualization and Graphics Research Group at UC Davis
+IMAGINE Research Group at Universidad de los Andes, Bogotá, Colombia
+Imager Laboratory at University of British Columbia
+MIT Computer Graphics Group
+MRL at NYU
+Princeton Graphics and Geometry Group
+Stanford Computer Graphics Laboratory
+UCSD Computer Graphics Laboratory
+Vision Research Center at Vanderbilt
+INI-GraphicsNet international network
+VRVis Research Center
+
+
+=== Industry ===
+Industrial labs doing "blue sky" graphics research include:
+Adobe Advanced Technology Labs
+MERL
+Microsoft Research – Graphics
+Nvidia Research
+Major film studios notable for graphics research include:
+ILM
+PDI/Dreamworks Animation
+PixarThis is a list of academic conferences in computer science. Only conferences with separate articles are included; within each field, the conferences are listed alphabetically by their short names.
+
+
+== General ==
+FCRC – Federated Computing Research Conference
+
+
+== Algorithms and theory ==
+
+Conferences accepting a broad range of topics from theoretical computer science, including algorithms, data structures, computability, computational complexity, automata theory and formal languages:
+FCT – International Symposium on Fundamentals of Computation Theory
+FOCS – IEEE Symposium on Foundations of Computer Science
+ICALP – International Colloquium on Automata, Languages and Programming
+ISAAC – International Symposium on Algorithms and Computation
+MFCS – International Symposium on Mathematical Foundations of Computer Science
+STACS – Symposium on Theoretical Aspects of Computer Science
+STOC – ACM Symposium on Theory of Computing
+WoLLIC – Workshop on Logic, Language, Information and Computation
+
+
+=== Algorithms ===
+Conferences whose topic is algorithms and data structures considered broadly, but that do not include other areas of theoretical computer science such as computational complexity theory:
+ESA – European Symposium on Algorithms
+SODA – ACM–SIAM Symposium on Discrete Algorithms
+SWAT – Scandinavian Symposium and Workshops on Algorithm Theory
+WADS – Algorithms and Data Structures Symposium
+WAOA – Workshop on Approximation and Online Algorithms
+
+
+=== Geometric algorithms ===
+Conferences on computational geometry, graph drawing, and other application areas of geometric computing:
+GD – International Symposium on Graph Drawing
+SoCG – ACM Symposium on Computational Geometry
+
+
+=== Logic ===
+
+LICS – ACM–IEEE Symposium on Logic in Computer Science
+RTA – International Conference on Rewriting Techniques and Applications
+
+
+=== Other specialized subtopics ===
+CIAA – International Conference on Implementation and Application of Automata
+CCC – Computational Complexity Conference
+DCFS – International Workshop on Descriptional Complexity of Formal Systems
+DLT – International Conference on Developments in Language Theory
+ISSAC – International Symposium on Symbolic and Algebraic Computation
+Petri Nets - International Conference on Applications and Theory of Petri Nets and Concurrency
+
+
+== Languages and software ==
+
+
+=== Programming languages ===
+Conferences on programming languages, programming language theory and compilers:
+CC – ETAPS International Conference on Compiler Construction
+ECOOP – AITO European Conference on Object-Oriented Programming
+ESOP – ETAPS European Symposium on Programming
+HOPL – ACM SIGPLAN History of Programming Languages Conference
+ICFP – ACM SIGPLAN International Conference on Functional Programming
+ICLP – ALP International Conference on Logic Programming
+ISMM – ACM SIGPLAN International Symposium on Memory Management
+OOPSLA – ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications
+POPL – ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages
+PLDI – ACM SIGPLAN Conference on Programming Language Design and Implementation
+
+
+=== Software engineering ===
+Conferences on software engineering:
+ASE – IEEE/ACM International Conference on Automated Software Engineering
+ICSE – International Conference on Software Engineering
+ICSR – International Conference on Software Reuse
+MODELS – IEEE/ACM International Conference on Model Driven Engineering Languages and Systems
+
+
+=== Formal methods ===
+
+Conferences on formal methods in software engineering, including formal specification, formal verification, and static code analysis:
+CAV – Computer Aided Verification
+FORTE – IFIP International Conference on Formal Techniques for Networked and Distributed Systems
+
+
+== Concurrent, distributed and parallel computing ==
+
+Conferences on concurrent, distributed, and parallel computing, fault-tolerant systems, and dependable systems:
+DEBS - ACM International Conference on Distributed Event-Based Systems
+DISC - International Symposium on Distributed Computing
+DSN - International Conference on Dependable Systems and Networks
+ICDCS - IEEE International Conference on Distributed Computing Systems
+ICPADS - IEEE International Conference on Parallel and Distributed Systems
+IPDPS - IEEE International Parallel and Distributed Processing Symposium
+PODC - ACM Symposium on Principles of Distributed Computing
+PPoPP - ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+SIROCCO - International Colloquium on Structural Information and Communication Complexity
+SPAA - ACM Symposium on Parallelism in Algorithms and Architectures
+SRDS - IEEE International Symposium on Reliable Distributed Systems
+
+
+=== High-performance computing ===
+Conferences on high-performance computing, cluster computing, and grid computing:
+HiPC - International Conference on High Performance Computing
+SC - ACM/IEEE Supercomputing Conference
+
+
+== Operating systems ==
+
+Conferences on operating systems, storage systems and middleware:
+ATC - USENIX Annual Technical Conference
+FAST - USENIX Conference on File and Storage Technologies
+Middleware - ACM/IFIP/USENIX International Middleware Conference
+SOSP - ACM Symposium on Operating Systems Principles
+SYSTOR - ACM International Systems and Storage Conference
+
+
+== Computer architecture ==
+Conferences on computer architecture:
+ASPLOS - International Conference on Architectural Support for Programming Languages and Operating Systems
+ISCA - International Symposium on Computer Architecture
+MICRO - IEEE/ACM International Symposium on Microarchitecture
+
+
+=== Computer hardware ===
+Conferences on computer hardware:
+ISCAS - IEEE International Symposium on Circuits and Systems
+
+
+=== Computer-aided design ===
+Conferences on computer-aided design and electronic design automation:
+ASP-DAC - Asia and South Pacific Design Automation Conference
+DAC - Design Automation Conference
+DATE - Design, Automation, and Test in Europe
+ICCAD - International Conference on Computer-Aided Design
+ISPD - International Symposium on Physical Design
+
+
+== Computer networking ==
+
+Conferences on computer networking:
+GlobeCom - IEEE Global Communications Conference
+ICC - IEEE International Conference on Communications
+ICSOC - International Conference on Service Oriented Computing
+INFOCOM - IEEE Conference on Computer Communications
+SIGCOMM - ACM SIGCOMM Conference
+WINE - The Workshop on Internet & Network Economics
+
+
+=== Wireless networks and mobile computing ===
+Wireless networks and mobile computing, including ubiquitous and pervasive computing, wireless ad hoc networks and wireless sensor networks:
+EWSN - European Conference on Wireless Sensor Networks
+IPSN - ACM/IEEE International Conference on Information Processing in Sensor Networks
+ISWC - International Symposium on Wearable Computers
+MobiHoc - ACM International Symposium on Mobile Ad Hoc Networking and Computing
+SenSys - ACM Conference on Embedded Networked Sensor Systems
+
+
+== Security and privacy ==
+Conferences on computer security and privacy:
+DSN - International Conference on Dependable Systems and Networks
+USENIX Security Symposium
+SOUPS - Symposium on Usable Privacy and Security
+
+
+=== Cryptography ===
+
+Cryptography conferences:
+ACNS - Applied Cryptography and Network Security
+ANTS - Algorithmic Number Theory Symposium
+ASIACRYPT - International Conference on the Theory and Application of Cryptology and Information Security
+CHES - Workshop on Cryptographic Hardware and Embedded Systems
+CRYPTO - International Cryptology Conference
+EUROCRYPT - International Conference on the Theory and Applications of Cryptographic Techniques
+FSE - Fast Software Encryption Workshop
+INDOCRYPT - International Conference on Cryptology in India
+PKC - International Workshop on Practice and Theory in Public Key Cryptography
+RSA - RSA Conference
+TCC - Theory of Cryptography Conference
+
+
+== Data management ==
+Conferences on databases, information systems, information retrieval, data mining and the world wide web:
+CIDR - Conference on Innovative Data Systems Research
+CIKM - ACM Conference on Information and Knowledge Management
+ECIR - European Conference on Information Retrieval
+ECIS - European Conference on Information Systems
+ER - International Conference on Conceptual Modeling
+ICDT - International Conference on Database Theory
+ICIS - International Conference on Information Systems
+ISWC - International Semantic Web Conference
+JCDL - ACM/IEEE Joint Conference on Digital Libraries
+KDD - ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+PODS - ACM Symposium on Principles of Database Systems
+SIGIR - Annual International ACM SIGIR Conference
+SIGMOD - ACM SIGMOD Conference
+VLDB - International Conference on Very Large Data Bases
+WWW - World Wide Web Conference
+
+
+== Artificial intelligence ==
+Conferences on artificial intelligence and machine learning:
+AAAI - AAAI Conference on Artificial Intelligence
+AAMAS - International Conference on Autonomous Agents and Multiagent Systems
+ECAI - European Conference on Artificial Intelligence
+ECML PKDD - European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases
+ICML - International Conference on Machine Learning
+IJCAI - International Joint Conference on Artificial Intelligence
+ISWC - International Semantic Web Conference
+NIPS - Conference on Neural Information Processing Systems
+RuleML - RuleML Symposium
+
+
+=== Evolutionary computation ===
+Conferences on Evolutionary computation.
+CEC - IEEE Congress on Evolutionary Computation
+GECCO - Genetic and Evolutionary Computation Conference
+
+
+=== Automated reasoning ===
+
+Conferences on automated reasoning:
+IJCAR - International Joint Conference on Automated Reasoning
+LPAR - International Conference on Logic for Programming, Artificial Intelligence and Reasoning
+RuleML - RuleML Symposium
+TABLEAUX - International Conference on Automated Reasoning with Analytic Tableaux and Related Methods
+WoLLIC - Workshop on Logic, Language, Information and Computation
+
+
+=== Computer vision ===
+
+Conferences on computer vision (including also image analysis) and pattern recognition:
+BMVC - British Machine Vision Conference
+CVPR - Conference on Computer Vision and Pattern Recognition
+ECCV - European Conference on Computer Vision
+ICCV - International Conference on Computer Vision
+PSIVT - Pacific Rim Symposium on Image and Video Technology
+SCIA - Scandinavian Conference on Image Analysis
+SSIAI - IEEE Southwest Symposium on Image Analysis and Interpretation
+
+
+=== Natural language processing ===
+Conferences on computational linguistics and natural language processing:
+ACL - Annual Meeting of the Association for Computational Linguistics
+CICLing - International Conference on Intelligent Text Processing and Computational Linguistics
+NAACL - Annual Conference of the North American Chapter of the Association for Computational Linguistics
+TSD - Text, Speech and Dialogue
+
+
+== Computer graphics ==
+
+Conferences on computer graphics, geometry processing, image processing, and multimedia:
+Eurographics - Annual Conference of the European Association for Computer Graphics
+MM - ACM International Conference on Multimedia
+SGP - Symposium on Geometry Processing
+SIGGRAPH - International Conference on Computer Graphics and Interactive Techniques
+
+
+=== Visualization ===
+Conferences on scientific visualization and information visualization:
+VIS - IEEE Visualization Conference
+
+
+== Human–computer interaction ==
+Conferences on human–computer interaction and user interfaces:
+ASSETS - International ACM SIGACCESS Conference on Computers and Accessibility
+CHI - ACM Conference on Human Factors in Computing Systems
+GI - Graphics Interface
+MobileHCI - Conference on Human-Computer Interaction with Mobile Devices and Services
+SIGDOC - ACM International Conference on Design of Communication
+UIST - ACM Symposium on User Interface Software and Technology
+UMAP - ACM International Conference on User Modeling, Adaptation, and Personalization
+
+
+== Computational biology ==
+Conferences on bioinformatics and computational biology:
+CIBB - International Meeting on Computational Intelligence Methods for Bioinformatics and Biostatistics
+ISMB - Intelligent Systems for Molecular Biology
+PSB - Pacific Symposium on Biocomputing
+RECOMB - Research in Computational Molecular Biology
+WABI - Workshop on Algorithms in Bioinformatics
+
+
+== Education ==
+Conferences on computer science education and electronic learning:
+SIGCSE - ACM Technical Symposium on Computer Science Education
+
+
+== See also ==
+List of computer science conference acronyms
+List of computer science journals
+List of publications in computer science
+Outline of computer science
+
+
+== External links ==
+DBLP database with conferences and workshops
+The Informatics Europe's Computer Science Event ListThe Bachelor of Computer Science or Bachelor of Science in Computer Science (abbreviated BCompSc or BCS or BS CS or B.Sc. CS) is a type of bachelor's degree, usually awarded after three or four years of collegiate study in computer science, but possibly awarded in fewer years depending on factors such as an institution's course requirements and academic calendar. In some cases it can be awarded in five years. In general, computer science degree programs emphasize the mathematical and theoretical foundations of computing.
+The same core curriculum may, depending on the school, result in other degrees, including:
+Bachelor of Arts (BA) in Computer Science
+Bachelor of Applied Science (BASc) in Computer Science
+Bachelor of Technology in Computer Science and Engineering (B.Tech)
+Bachelor of Science in Information Technology
+Bachelor of Mathematics in Computer Science
+Bachelor of Engineering (BEng or BE) in Computer Science
+Bachelor of Computing in Computer Science
+Bachelor of Science in Engineering (Computer Science) - BSE (CS)
+Bachelor of Computer Security in Computer Science
+Bachelor of Science (BSc or BS) in Computer Science (BSc CS or BSCS or BSc (Comp)
+In many post-secondary institutions, an Honors Bachelor of Computer Science degree has been introduced as an upgrade to the regular bachelor's program and usually requires at least one additional year of study.
+
+
+== Typical requirements ==
+Because computer science is a wide field, courses required to earn a bachelor of computer science degree vary. A typical list of course requirements includes topics such as:
+Computer programming
+Programming paradigms
+Algorithms
+Data structures
+Logic & Computation
+Computer architecture
+Some schools may place more emphasis on mathematics and require additional courses such as:
+Linear algebra
+Calculus
+Probability theory and statistics
+Combinatorics and discrete mathematics
+Differential calculus and mathematics
+Beyond the basic set of computer science courses, students can typically choose additional courses from a variety of different fields, such as:
+Theory of computation
+Operating systems
+Numerical computation
+Compilers, compiler design
+Real-time computing
+Distributed systems
+Computer networking
+Data communication
+Computer graphics
+Artificial intelligence
+Human-computer interaction
+Information theory
+Software testing
+Information assurance
+Some schools allow students to specialize in a certain area of computer science.
+
+
+== Related degrees ==
+Bachelor of Software Engineering
+Bachelor of Science in Information Technology
+Bachelor of Computing
+Bachelor of Information Technology
+Bachelor of Computer Information Systems
+Bachelor of computer design
+
+
+== References ==Computer Science and Engineering (CSE) is an interdisciplinary academic program at some universities that combines aspects of both computer science and computer engineering programs. It is a subfield of electronics engineering. However, it covers only the digital aspects of electronics engineering, with added courses like computer architecture, processor design and parallel computing. It focuses more on hardware-software integration, considering the machine as a system.
+Computer science programs typically centers primarily around theory and software, with only some hardware; upper division courses tend to allow a lot of freedom to specialize in software and theory related areas (e.g. algorithms, artificial intelligence, cryptography/security, graphics/visualization, numerical and symbolic computing, operating systems/distributed processing, software engineering).
+Computer engineering programs tend to resemble computer science at the lower division with similar introductory programming and math courses, but diverges from computer science at the upper division with heavy electrical engineering requirements (e.g. digital and analog circuits, integrated circuit design, VLSI design and control systems. Despite the overlap with computer science at the lower division level, computer engineering skews much more heavily toward the hardware/electronics side that it has more in common with electrical engineering.
+Computer Science and Engineering integrates all of the above and is intended to develop a solid understanding of the entire machine (computer hardware and software). The higher unit count required to complete the program often means that a CSE student will need to spend an extra year in university.
+Although Computer Science and Engineering is the common designation for the combined program, some universities (such as Berkeley and MIT) deviate by calling their program Electrical Engineering and Computer Science (EECS). Furthermore, there are some universities (such as UCI and UC Merced) that named their department EECS and the program housed within CSE.
+
+
+== References ==
+
+
+== See also ==
+Computer Science
+Computer Engineering
+Electrical Engineering
+Software EngineeringThe following outline is provided as an overview of and topical guide to computer science:
+Computer science (also called computing science) is the study of the theoretical foundations of information and computation and their implementation and application in computer systems. One well known subject classification system for computer science is the ACM Computing Classification System devised by the Association for Computing Machinery.
+
+
+== What type of thing is computer science? ==
+Computer science can be described as all of the following:
+Academic discipline
+Science
+Applied science
+
+
+== Subfields ==
+
+
+=== Mathematical foundations ===
+Coding theory – Useful in networking and other areas where computers communicate with each other.
+Game theory – Useful in artificial intelligence and cybernetics.
+Graph theory – Foundations for data structures and searching algorithms.
+Mathematical logic – Boolean logic and other ways of modeling logical queries; the uses and limitations of formal proof methods
+Number theory – Theory of the integers. Used in cryptography as well as a test domain in artificial intelligence.
+
+
+=== Algorithms and data structures ===
+Algorithms – Sequential and parallel computational procedures for solving a wide range of problems.
+Data structures – The organization and manipulation of data.
+
+
+=== Artificial intelligence ===
+Outline of artificial intelligence
+Artificial intelligence – The implementation and study of systems that exhibit an autonomous intelligence or behavior of their own.
+Automated reasoning – Solving engines, such as used in Prolog, which produce steps to a result given a query on a fact and rule database, and automated theorem provers that aim to prove mathematical theorems with some assistance from a programmer.
+Computer vision – Algorithms for identifying three-dimensional objects from a two-dimensional picture.
+Soft computing, the use of inexact solutions for otherwise extremely difficult problems:
+Machine learning - Automated creation of a set of rules and axioms based on input.
+Evolutionary computing - Biologically inspired algorithms.
+
+Natural language processing - Building systems and algorithms that analyze, understand, and generate natural (human) languages.
+Robotics – Algorithms for controlling the behaviour of robots.
+
+
+=== Communication and security ===
+Networking – Algorithms and protocols for reliably communicating data across different shared or dedicated media, often including error correction.
+Computer security – Practical aspects of securing computer systems and computer networks.
+Cryptography – Applies results from complexity, probability, algebra and number theory to invent and break codes, and analyze the security of cryptographic protocols.
+
+
+=== Computer architecture ===
+Computer architecture – The design, organization, optimization and verification of a computer system, mostly about CPUs and Memory subsystem (and the bus connecting them).
+Operating systems – Systems for managing computer programs and providing the basis of a usable system.
+
+
+=== Computer graphics ===
+Computer graphics – Algorithms both for generating visual images synthetically, and for integrating or altering visual and spatial information sampled from the real world.
+Image processing – Determining information from an image through computation.
+Information visualization – Methods for representing and displaying abstract data to facilitate human interaction for exploration and understanding.
+
+
+=== Concurrent, parallel, and distributed systems ===
+Parallel computing - The theory and practice of simultaneous computation; data safety in any multitasking or multithreaded environment.
+Concurrency (computer science) – Computing using multiple concurrent threads of execution, devising algorithms for solving problems on multiple processors to achieve maximal speed-up compared to sequential execution.
+Distributed computing – Computing using multiple computing devices over a network to accomplish a common objective or task and thereby reducing the latency involved in single processor contributions for any task.
+
+
+=== Databases ===
+Relational databases – the set theoretic and algorithmic foundation of databases.
+Structured Storage - non-relational databases such as NoSQL databases.
+Data mining – Study of algorithms for searching and processing information in documents and databases; closely related to information retrieval.
+
+
+=== Programming languages and compilers ===
+Compiler theory – Theory of compiler design, based on Automata theory.
+Programming language pragmatics – Taxonomy of programming languages, their strength and weaknesses. Various programming paradigms, such as object-oriented programming.
+Programming language theory
+Formal semantics – rigorous mathematical study of the meaning of programs.
+Type theory – Formal analysis of the types of data, and the use of these types to understand properties of programs — especially program safety.
+
+
+=== Scientific computing ===
+Computational science – constructing mathematical models and quantitative analysis techniques and using computers to analyze and solve scientific problems.
+Numerical analysis – Approximate numerical solution of mathematical problems such as root-finding, integration, the solution of ordinary differential equations; the approximation of special functions.
+Symbolic computation – Manipulation and solution of expressions in symbolic form, also known as Computer algebra.
+Computational physics – Numerical simulations of large non-analytic systems
+Computational chemistry – Computational modelling of theoretical chemistry in order to determine chemical structures and properties
+Bioinformatics and Computational biology – The use of computer science to maintain, analyse, store biological data and to assist in solving biological problems such as Protein folding, function prediction and Phylogeny.
+Computational neuroscience – Computational modelling of neurophysiology.
+
+
+=== Software engineering ===
+Formal methods – Mathematical approaches for describing and reasoning about software designs.
+Software engineering – The principles and practice of designing, developing, and testing programs, as well as proper engineering practices.
+Algorithm design – Using ideas from algorithm theory to creatively design solutions to real tasks.
+Computer programming – The practice of using a programming language to implement algorithms.
+Human–computer interaction – The study and design of computer interfaces that people use.
+Reverse engineering – The application of the scientific method to the understanding of arbitrary existing software.
+
+
+=== Theory of computation ===
+
+Automata theory – Different logical structures for solving problems.
+Computability theory – What is calculable with the current models of computers. Proofs developed by Alan Turing and others provide insight into the possibilities of what may be computed and what may not.
+List of unsolved problems in computer science
+
+Computational complexity theory – Fundamental bounds (especially time and storage space) on classes of computations.
+Quantum computing theory – Explores computational models involving quantum superposition of bits.
+
+
+== History ==
+History of computer science
+List of pioneers in computer science
+
+
+== Professions ==
+Programmer
+Teacher/Professor
+Software engineer
+Software architect
+Software developer
+Software tester
+Interaction designer
+Network administrator
+
+
+== Data and data structures ==
+Data structure
+Data type
+Associative array and Hash table
+Array
+List
+Tree
+String
+Matrix (computer science)
+Database
+
+
+== Programming paradigms ==
+Imperative programming/Procedural programming
+Functional programming
+Logic programming
+Object oriented programming
+Class
+Inheritance
+Object
+
+
+== See also ==
+
+Abstraction
+Big O notation
+Closure
+Compiler
+Cognitive science
+
+
+== External links ==
+
+Outline of computer science at Curlie (based on DMOZ)
+ACM report on a recommended computer science curriculum (2008)
+Directory of free university lectures in Computer Science
+Collection of Computer Science Bibliographies
+Photographs of computer scientists (Bertrand Meyer's gallery)In computer science, artificial intelligence, and mathematical optimization, a heuristic (from Greek εὑρίσκω "I find, discover") is a technique designed for solving a problem more quickly when classic methods are too slow, or for finding an approximate solution when classic methods fail to find any exact solution. This is achieved by trading optimality, completeness, accuracy, or precision for speed. In a way, it can be considered a shortcut.
+A heuristic function, also called simply a heuristic, is a function that ranks alternatives in search algorithms at each branching step based on available information to decide which branch to follow. For example, it may approximate the exact solution.
+
+
+== Definition and motivation ==
+The objective of a heuristic is to produce a solution in a reasonable time frame that is good enough for solving the problem at hand. This solution may not be the best of all the solutions to this problem, or it may simply approximate the exact solution. But it is still valuable because finding it does not require a prohibitively long time.
+Heuristics may produce results by themselves, or they may be used in conjunction with optimization algorithms to improve their efficiency (e.g., they may be used to generate good seed values).
+Results about NP-hardness in theoretical computer science make heuristics the only viable option for a variety of complex optimization problems that need to be routinely solved in real-world applications.
+Heuristics underlie the whole field of Artificial Intelligence and the computer simulation of thinking, as they may be used in situations where there are no known algorithms.
+
+
+== Trade-off ==
+The trade-off criteria for deciding whether to use a heuristic for solving a given problem include the following:
+Optimality: When several solutions exist for a given problem, does the heuristic guarantee that the best solution will be found? Is it actually necessary to find the best solution?
+Completeness: When several solutions exist for a given problem, can the heuristic find them all? Do we actually need all solutions? Many heuristics are only meant to find one solution.
+Accuracy and precision: Can the heuristic provide a confidence interval for the purported solution? Is the error bar on the solution unreasonably large?
+Execution time: Is this the best known heuristic for solving this type of problem? Some heuristics converge faster than others. Some heuristics are only marginally quicker than classic methods.
+In some cases, it may be difficult to decide whether the solution found by the heuristic is good enough, because the theory underlying that heuristic is not very elaborate.
+
+
+== Examples ==
+
+
+=== Simpler problem ===
+One way of achieving the computational performance gain expected of a heuristic consists of solving a simpler problem whose solution is also a solution to the initial problem. Such a heuristic is unable to find all the solutions to the initial problem, but it may find one much faster because the simple problem is easy to solve.
+
+
+=== Traveling salesman problem ===
+An example of approximation is described by Jon Bentley for solving the traveling salesman problem (TSP) so as to select the order to draw using a pen plotter. TSP is known to be NP-Complete so an optimal solution for even a moderate size problem is intractable. Instead, the greedy algorithm can be used to give a good but not optimal solution (it is an approximation to the optimal answer) in a reasonably short amount of time. The greedy algorithm heuristic says to pick whatever is currently the best next step regardless of whether that precludes good steps later. It is a heuristic in that practice says it is a good enough solution, theory says there are better solutions (and even can tell how much better in some cases).
+
+
+=== Search ===
+Another example of heuristic making an algorithm faster occurs in certain search problems. Initially, the heuristic tries every possibility at each step, like the full-space search algorithm. But it can stop the search at any time if the current possibility is already worse than the best solution already found. In such search problems, a heuristic can be used to try good choices first so that bad paths can be eliminated early (see alpha-beta pruning).
+
+
+=== Newell and Simon: heuristic search hypothesis ===
+In their Turing Award acceptance speech, Allen Newell and Herbert A. Simon discuss the heuristic search hypothesis: a physical symbol system will repeatedly generate and modify known symbol structures until the created structure matches the solution structure. Each successive iteration depends upon the step before it, thus the heuristic search learns what avenues to pursue and which ones to disregard by measuring how close the current iteration is to the solution. Therefore, some possibilities will never be generated as they are measured to be less likely to complete the solution.
+A heuristic method can accomplish its task by using search trees. However, instead of generating all possible solution branches, a heuristic selects branches more likely to produce outcomes than other branches. It is selective at each decision point, picking branches that are more likely to produce solutions.
+
+
+=== Virus scanning ===
+Many virus scanners use heuristic rules for detecting viruses and other forms of malware. Heuristic scanning looks for code and/or behavioral patterns indicative of a class or family of viruses, with different sets of rules for different viruses. If a file or executing process is observed to contain matching code patterns and/or to be performing that set of activities, then the scanner infers that the file is infected. The most advanced part of behavior-based heuristic scanning is that it can work against highly randomized polymorphic viruses, which simpler string scanning-only approaches cannot reliably detect. Heuristic scanning has the potential to detect many future viruses without requiring the virus to be detected somewhere, submitted to the virus scanner developer, analyzed, and a detection update for the scanner provided to the scanner's users.
+
+
+== Pitfalls ==
+Some heuristics have a strong underlying theory; they are either derived in a top-down manner from the theory or inferred from experimental data. Others are just rules of thumb learned empirically without even a glimpse of theory. The latter are exposed to a number of pitfalls.
+When a heuristic is reused in various contexts because it has been seen to "work" in one context, without having been mathematically proven to meet a given set of requirements, it is possible that the current data set does not necessarily represent future data sets (see: overfitting) and that purported "solutions" turn out to be akin to noise.
+Statistical analysis can be conducted when employing heuristics to estimate the probability of incorrect outcomes. To use a heuristic for solving a search or a knapsack problem, it is necessary to check that the heuristic is admissible. Given a heuristic function 
+  
+    
+      
+        h
+        (
+        
+          v
+          
+            i
+          
+        
+        ,
+        
+          v
+          
+            g
+          
+        
+        )
+      
+    
+    {\displaystyle h(v_{i},v_{g})}
+   meant to approximate the true optimal distance 
+  
+    
+      
+        
+          d
+          
+            ⋆
+          
+        
+        (
+        
+          v
+          
+            i
+          
+        
+        ,
+        
+          v
+          
+            g
+          
+        
+        )
+      
+    
+    {\displaystyle d^{\star }(v_{i},v_{g})}
+   to the goal node 
+  
+    
+      
+        
+          v
+          
+            g
+          
+        
+      
+    
+    {\displaystyle v_{g}}
+   in a directed graph 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   containing 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   total nodes or vertexes labeled 
+  
+    
+      
+        
+          v
+          
+            0
+          
+        
+        ,
+        
+          v
+          
+            1
+          
+        
+        ,
+        ⋯
+        ,
+        
+          v
+          
+            n
+          
+        
+      
+    
+    {\displaystyle v_{0},v_{1},\cdots ,v_{n}}
+  , "admissible" means that 
+  
+    
+      
+        h
+        (
+        
+          v
+          
+            i
+          
+        
+        ,
+        
+          v
+          
+            g
+          
+        
+        )
+        ≤
+        
+          d
+          
+            ⋆
+          
+        
+        (
+        
+          v
+          
+            i
+          
+        
+        ,
+        
+          v
+          
+            g
+          
+        
+        )
+      
+    
+    {\displaystyle h(v_{i},v_{g})\leq d^{\star }(v_{i},v_{g})}
+   for all 
+  
+    
+      
+        (
+        
+          v
+          
+            i
+          
+        
+        ,
+        
+          v
+          
+            g
+          
+        
+        )
+      
+    
+    {\displaysty

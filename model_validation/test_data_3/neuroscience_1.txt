@@ -1,0 +1,486 @@
+that person. This theory gained significant public attention, leading to the publication of phrenology journals and the creation of phrenometers, which measured the bumps on a human subject's head. While phrenology remained a fixture at fairs and carnivals, it did not enjoy wide acceptance within the scientific community. The major criticism of phrenology is that researchers were not able to test theories empirically.
+
+
+==== Localizationist view ====
+The localizationist view was concerned with mental abilities being localized to specific areas of the brain rather than on what the characteristics of the abilities were and how to measure them. Studies performed in Europe, such as those of John Hughlings Jackson, supported this view. Jackson studied patients with brain damage, particularly those with epilepsy. He discovered that the epileptic patients often made the same clonic and tonic movements of muscle during their seizures, leading Jackson to believe that they must be occurring in the same place every time. Jackson proposed that specific functions were localized to specific areas of the brain, which was critical to future understanding of the brain lobes.
+
+
+==== Aggregate field view ====
+According to the aggregate field view, all areas of the brain participate in every mental function.
+Pierre Flourens, a French experimental psychologist, challenged the localizationist view by using animal experiments. He discovered that removing the cerebellum in rabbits and pigeons affected their sense of muscular coordination, and that all cognitive functions were disrupted in pigeons when the cerebral hemispheres were removed. From this he concluded that the cerebral cortex, cerebellum, and brainstem functioned together as a whole. His approach has been criticised on the basis that the tests were not sensitive enough to notice selective deficits had they been present.
+
+
+==== Emergence of neuropsychology ====
+Perhaps the first serious attempts to localize mental functions to specific locations in the brain was by Broca and Wernicke. This was mostly achieved by studying the effects of injuries to different parts of the brain on psychological functions. In 1861, French neurologist Paul Broca came across a man who was able to understand language but unable to speak. The man could only produce the sound "tan". It was later discovered that the man had damage to an area of his left frontal lobe now known as Broca's area. Carl Wernicke, a German neurologist, found a patient who could speak fluently but non-sensibly. The patient had been the victim of a stroke, and could not understand spoken or written language. This patient had a lesion in the area where the left parietal and temporal lobes meet, now known as Wernicke's area. These cases, which suggested that lesions caused specific behavioral changes, strongly supported the localizationist view.
+
+
+==== Mapping the brain ====
+In 1870, German physicians Eduard Hitzig and Gustav Fritsch published their findings about the behavior of animals. Hitzig and Fritsch ran an electric current through the cerebral cortex of a dog, causing different muscles to contract depending on which areas of the brain were electrically stimulated. This led to the proposition that individual functions are localized to specific areas of the brain rather than the cerebrum as a whole, as the aggregate field view suggests. Brodmann was also an important figure in brain mapping; his experiments based on Franz Nissl’s tissue staining techniques divided the brain into fifty-two areas.
+
+
+=== 20th century ===
+
+
+==== Cognitive revolution ====
+At the start of the 20th century, attitudes in America were characterised by pragmatism, which led to a preference for behaviorism as the primary approach in psychology. J.B. Watson was a key figure with his stimulus-response approach. By conducting experiments on animals he was aiming to be able to predict and control behaviour. Behaviourism eventually failed because it could not provide realistic psychology of human action and thought – it focused primarily on stimulus-response associations at the expense of explaining phenomena like thought and imagination. This led to what is often termed as the "cognitive revolution".
+
+
+==== Neuron doctrine ====
+
+In the early 20th century, Santiago Ramón y Cajal and Camillo Golgi began working on the structure of the neuron. Golgi developed a silver staining method that could entirely stain several cells in a particular area, leading him to believe that neurons were directly connected with each other in one cytoplasm. Cajal challenged this view after staining areas of the brain that had less myelin and discovering that neurons were discrete cells. Cajal also discovered that cells transmit electrical signals down the neuron in one direction only. Both Golgi and Cajal were awarded a Nobel Prize in Physiology or Medicine in 1906 for this work on the neuron doctrine.
+
+
+=== Mid-late 20th century ===
+Several findings in the 20th century continued to advance the field, such as the discovery of ocular dominance columns, recording of single nerve cells in animals, and coordination of eye and head movements. Experimental psychology was also significant in the foundation of cognitive neuroscience. Some particularly important results were the demonstration that some tasks are accomplished via discrete processing stages, the study of attention, and the notion that behavioural data do not provide enough information by themselves to explain mental processes. As a result, some experimental psychologists began to investigate neural bases of behaviour. Wilder Penfield created maps of primary sensory and motor areas of the brain by stimulating cortices of patients during surgery. Sperry and Gazzaniga’s work on split brain patients in the 1950s was also instrumental in the progress of the field.
+
+
+==== Brain mapping ====
+New brain mapping technology, particularly fMRI and PET, allowed researchers to investigate experimental strategies of cognitive psychology by observing brain function. Although this is often thought of as a new method (most of the technology is relatively recent), the underlying principle goes back as far as 1878 when blood flow was first associated with brain function. Angelo Mosso, an Italian psychologist of the 19th century, had monitored the pulsations of the adult brain through neurosurgically created bony defects in the skulls of patients. He noted that when the subjects engaged in tasks such as mathematical calculations the pulsations of the brain increased locally. Such observations led Mosso to conclude that blood flow of the brain followed function.
+
+
+== Emergence of a new discipline ==
+
+
+=== Birth of cognitive science ===
+On September 11, 1956, a large-scale meeting of cognitivists took place at the Massachusetts Institute of Technology. George A. Miller presented his "The Magical Number Seven, Plus or Minus Two" paper while Noam Chomsky and Newell & Simon presented their findings on computer science. Ulric Neisser commented on many of the findings at this meeting in his 1967 book Cognitive Psychology. The term "psychology" had been waning in the 1950s and 1960s, causing the field to be referred to as "cognitive science". Behaviorists such as Miller began to focus on the representation of language rather than general behavior. David Marr concluded that one should understand any cognitive process at three levels of analysis. These levels include computational, algorithmic/representational, and physical levels of analysis.
+
+
+=== Combining neuroscience and cognitive science ===
+Before the 1980s, interaction between neuroscience and cognitive science was scarce. Cognitive neuroscience began to integrate the newly laid theoretical ground in cognitive science, that emerged between the 1950s and 1960s, with approaches in experimental psychology, neuropsychology and neuroscience. (Neuroscience was not established as a unified discipline until 1971). In the very late 20th century new technologies evolved that are now the mainstay of the methodology of cognitive neuroscience, including TMS (1985) and fMRI (1991). Earlier methods used in cognitive neuroscience includes EEG (human EEG 1920) and MEG (1968). Occasionally cognitive neuroscientists utilize other brain imaging methods such as PET and SPECT. An upcoming technique in neuroscience is NIRS which uses light absorption to calculate changes in oxy- and deoxyhemoglobin in cortical areas. In some animals Single-unit recording can be used. Other methods include microneurography, facial EMG, and eye-tracking. Integrative neuroscience attempts to consolidate data in databases, and form unified descriptive models from various fields and scales: biology, psychology, anatomy, and clinical practice. In 2014, Stanislas Dehaene, Giacomo Rizzolatti and Trevor Robbins, were awarded the Brain Prize "for their pioneering research on higher brain mechanisms underpinning such complex human functions as literacy, numeracy, motivated behaviour and social cognition, and for their efforts to understand cognitive and behavioural disorders". Brenda Milner, Marcus Raichle and John O'Keefe received the Kavli Prize in Neuroscience “for the discovery of specialized brain networks for memory and cognition" and O'Keefe shared the Nobel Prize in Physiology or Medicine in the same year with May-Britt Moser and Edvard Moser "for their discoveries of cells that constitute a positioning system in the brain". In 2017, Wolfram Schultz, Peter Dayan and Ray Dolan were awarded the Brain Prize "for their multidisciplinary analysis of brain mechanisms that link learning to reward, which has far-reaching implications for the understanding of human behaviour, including disorders of decision-making in conditions such as gambling, drug addiction, compulsive behaviour and schizophrenia".,
+
+
+== Major contributors to the field ==
+
+
+=== Hubel and Wiesel – 1960s ===
+David H. Hubel and Torsten Wiesel, both neurophysiologists, studied the visual system in cats to better understand sensory processing. They performed experiments which demonstrated the specificity of the responding of neurons. Their experiments showed that neurons fired rapidly at some angles, and not so much at others. A difference was also found in light and dark settings. Their studies gave rise to the idea of complex visual representations being formed from relatively simple stimuli.
+They also discovered the simple cell and complex cell. These exist in the primary visual cortex and respond differentially to differently oriented presentations of light.
+
+
+== Recent trends ==
+Recently the foci of research have expanded from the localization of brain area(s) for specific functions in the adult brain using a single technology, studies have been diverging in several different directions such as monitoring REM sleep via polygraphy, a machine that is capable of recording the electrical activity of a sleeping brain. Advances in non-invasive functional neuroimaging and associated data analysis methods have also made it possible to use highly naturalistic stimuli and tasks such as feature films depicting social interactions in cognitive neuroscience studies.
+
+
+== Topics ==
+Attention
+Change blindness
+Consciousness
+Decision-making
+Learning
+Memory
+Language
+Mirror neurons
+Perception
+Social cognition
+Emotions
+
+
+== Methods ==
+Experimental methods of specific psychology fields include:
+Psychophysics
+Functional magnetic resonance imaging
+Electroencephalography
+Electrocorticography
+Transcranial Magnetic Stimulation
+Computational Modeling
+
+
+== See also ==
+
+
+== References ==
+
+
+== Further reading ==
+Baars, B.J., Gage, N.M. (2010). "Cognition, Brain, and Consciousness: Introduction to Cognitive Neuroscience" (2nd ed.)
+Bear, M. F., Connors, B. W. & Paradiso M. A.(2007). "Neuroscience: Exploring the Brain" (3rd ed.). pp. 10–11. Lippincott Williams & Wilkins, ISBN 0-7817-6003-8
+Churchland, P.S. & Sejnowski, T.J. (1992). The Computational Brain, The MIT Press, ISBN 0-262-03188-4.
+Code, C. (1996). Classic Cases: Ancient & Modern Milestones in the Development of Neuropsychological Science. In: Code, C. et al. Classic Cases in Neuropsychology.
+Enersen, O. D. (2009). John Hughlings Jackson. In: Who Named It. http://www.whonamedit.com/doctor.cfm/2766.html Retrieved 14 August 2009
+Gazzaniga, M. S., Ivry, R. B. & Mangun, G. R. (2002). Cognitive Neuroscience: The biology of the mind (2nd ed.). New York: W.W.Norton.
+Gallistel, R. (2009). "Memory and the Computational Brain: Why Cognitive Science will Transform Neuroscience." Wiley-Blackwell ISBN 978-1-4051-2287-0.
+Gazzaniga, M. S., The Cognitive Neurosciences III, (2004), The MIT Press, ISBN 0-262-07254-8
+Gazzaniga, M. S., Ed. (1999). Conversations in the Cognitive Neurosciences, The MIT Press, ISBN 0-262-57117-X.
+Miller, G. A. (1956). "The magical number seven, plus or minus two: Some limits on our capacity for processing information". Psychological Review. 63: 81–97. doi:10.1037/h0043158. PMID 13310704. 
+Sternberg, Eliezer J. Are You a Machine? The Brain, the Mind and What it Means to be Human. Amherst, NY: Prometheus Books.
+Ward, Jamie (2015). The Student's Guide to Cognitive Neuroscience (3rd ed.). Psychology Press. ISBN 978-1848722729.  
+Handbook of Functional Neuroimaging of Cognition By Roberto Cabeza, Alan Kingstone
+Principles of neural science By Eric R. Kandel, James H. Schwartz, Thomas M. Jessell
+The Cognitive Neuroscience of Memory By Amanda Parker, Edward L. Wilding, Timothy J. Bussey
+Neuronal Theories of the Brain By Christof Koch, Joel L. Davis
+Cambridge Handbook of Thinking and Reasoning By Keith James Holyoak, Robert G. Morrison
+Handbook of Mathematical Cognition By Jamie I. D. Campbell
+Cognitive Psychology By Michael W. Eysenck, Mark T. Keane
+Development of Intelligence By Mike Anderson
+Development of Mental Processing By Andreas Demetriou, et al.
+Memory and Thinking By Robert H. Logie, K. J. Gilhooly
+Memory Capacity By Nelson Cowan
+Proceedings of the Nineteenth Annual Conference of the Cognitive Science
+Models of Working Memory By Akira Miyake, Priti Shah
+Memory and Thinking By Robert H. Logie, K. J. Gilhooly
+Variation in Working Memory By Andrew R. A. Conway, et al.
+Memory Capacity By Nelson Cowan
+Cognition and Intelligence By Robert J. Sternberg, Jean E. Pretz
+General Factor of Intelligence By Robert J. Sternberg, Elena Grigorenko
+Neurological Basis of Learning, Development and Discovery By Anton E. Lawson
+Memory and Human Cognition By John T. E. Richardson
+Society for Neuroscience. https://web.archive.org/web/20090805111859/http://www.sfn.org/index.cfm?pagename=about_SfN#timeline Retrieved 14 August 2009
+Keiji Tanaka,"Current Opinion in Neurobiology", (2007)
+
+
+== External links ==
+Cognitive Neuroscience Society Homepage
+There's Something about Zero
+What Is Cognitive Neuroscience?, Jamie Ward/Psychology Press
+goCognitive - Educational Tools for Cognitive Neuroscience (including video interviews)
+CogNet, The Brain and Cognitive Sciences Community Online, MIT
+Cognitive Neuroscience Arena, Psychology Press
+Cognitive Neuroscience and Philosophy, CUJCS, Spring 2002
+Whole Brain Atlas Top 100 Brain Structures
+Cognitive Neuroscience Discussion Group
+John Jonides, a big role in Cognitive Neurosciences by Beebrite
+School of Cognitive Science, Jadavpur University
+Introduction to Cognitive Neuroscience
+AgliotiLAB - Social and Cognitive Neuroscience Laboratory founded in 2003 in Rome, Italy
+
+
+=== Related Wikibooks ===
+Wikibook on cognitive psychology and cognitive neuroscience
+Wikibook on consciousness studies
+Cognitive Neuroscience chapter of the Wikibook on neuroscience
+Computational Cognitive Neuroscience wikibookAffective neuroscience is the study of the neural mechanisms of emotion. This interdisciplinary field combines neuroscience with the psychological study of personality, emotion, and mood. The putative existence of 'basic emotions' and their defining attributes represents a long lasting and yet unsettled issue in psychology.
+
+
+== Brain areas related to emotion ==
+Emotions are thought to be related to activity in brain areas that direct our attention, motivate our behavior, and determine the significance of what is going on around us. Pioneering work by Paul Broca (1878), James Papez (1937), and Paul D. MacLean (1952) suggested that emotion is related to a group of structures in the center of the brain called the limbic system, which includes the hypothalamus, cingulate cortex, hippocampi, and other structures. Research has shown that limbic structures are directly related to emotion, but non-limbic structures have been found to be of greater emotional relevance. The following brain structures are currently thought to be involved in emotion:
+
+
+=== Main structures of the limbic system ===
+Amygdala – The amygdalae are two small, round structures located anterior to the hippocampi near the temporal poles. The amygdalae are involved in detecting and learning what parts of our surroundings are important and have emotional significance. They are critical for the production of emotion, and may be particularly so for negative emotions, especially fear. Multiple studies have shown amygdala activation when perceiving a potential threat; various circuits allow the amygdala to use related past memories to better judge the possible threat.
+Thalamus – The thalamus is involved in relaying sensory and motor signals to the cerebral cortex, especially visual stimuli. The thalamus also plays an important role in regulating states of sleep and wakefulness.
+Hypothalamus – The hypothalamus is involved in producing a physical output associated with an emotion as well as in reward circuits
+Hippocampus – The hippocampus is a structure of the medial temporal lobes that is mainly involved in memory. It works to form new memories and also connecting different senses such as visual input, smell or sound to memories. The hippocampus allows memories to be stored long term and also retrieves them when necessary. It is this retrieval that is used within the amygdala to help evaluate current affective stimulus.
+Fornix – The fornix is the main output pathway from the hippocampus to the mammillary bodies. It has been identified as a main region in controlling spatial memory functions, episodic memory and executive functions.
+Mammillary body – Mammillary bodies are important for recollective memory.
+Olfactory bulb – The olfactory bulbs are the first cranial nerves, located on the ventral side of the frontal lobe. They are involved in olfaction, the perception of odors.
+Cingulate gyrus – The cingulate gyrus is located above the corpus callosum and is usually considered to be part of the limbic system. The different parts of the cingulate gyrus have different functions, and are involved with affect, visceromotor control, response selection, skeletomotor control, visuospatial processing, and in memory access. A part of the cingulate gyrus is the anterior cingulate cortex, that is thought to play a central role in attention and behaviorally demanding cognitive tasks. It may be particularly important with regard to conscious, subjective emotional awareness. This region of the brain may also play an important role in the initiation of motivated behavior. The subgenual cingulate is more active during both experimentally induced sadness and during depressive episodes.
+
+
+=== Other brain structures related to emotion ===
+Basal ganglia – Basal ganglia are groups of nuclei found on either side of the thalamus. Basal ganglia play an important role in motivation, action selection and reward learning.
+Orbitofrontal cortex – Is a major structure involved in decision making and the influence by emotion on that decision.
+Prefrontal cortex – The term prefrontal cortex refers to the very front of the brain, behind the forehead and above the eyes. It appears to play a critical role in the regulation of emotion and behavior by anticipating the consequences of our actions. The prefrontal cortex may play an important role in delayed gratification by maintaining emotions over time and organizing behavior toward specific goals.
+Ventral striatum – The ventral striatum is a group of subcortical structures thought to play an important role in emotion and behavior. One part of the ventral striatum called the nucleus accumbens is thought to be involved in the experience pleasure. Individuals with addictions experience increased activity in this area when they encounter the object of their addiction.
+Insula – The insular cortex is thought to play a critical role in the bodily experience of emotion, as it is connected to other brain structures that regulate the body’s autonomic functions (heart rate, breathing, digestion, etc.). The insula is implicated in empathy and awareness of emotion.
+Cerebellum – Recently, there has been a considerable amount of work that describes the role of the cerebellum in emotion as well as cognition, and a "Cerebellar Cognitive Affective Syndrome" has been described. Both neuroimaging studies as well as studies following pathological lesions in the cerebellum (such as a stroke) demonstrate that the cerebellum has a significant role in emotional regulation. Lesion studies have shown that cerebellar dysfunction can attenuate the experience of positive emotions. While these same studies do not show an attenuated response to frightening stimuli, the stimuli did not recruit structures that normally would be activated (such as the amygdala). Rather, alternative limbic structures were activated, such as the ventromedial prefrontal cortex, the anterior cingulate gyrus, and the insula. This may indicate that evolutionary pressure resulted in the development of the cerebellum as a redundant fear-mediating circuit to enhance survival. It may also indicate a regulatory role for the cerebellum in the neural response to rewarding stimuli, such as money, drugs of abuse, and orgasm.
+
+
+=== Role of the right hemisphere in emotion ===
+The right hemisphere has been proposed over time as being directly involved in the processing of emotion. Scientific theory regarding the role of the right hemisphere has developed over time and resulted in several models of emotional functioning. C.K. Mills was one of the first researchers to propose a direct link between the right hemisphere and emotional processing, having observed decreased emotional processing in patients with lesions to the right hemisphere. Emotion was originally thought to be processed in the limbic system structures such as the hypothalamus and amygdala. As of the late 1980s to early 1990s however, neocortical structures were shown to have an involvement in emotion. These findings led to the development of the right hemisphere hypothesis and the valence hypothesis.
+
+
+==== The right hemisphere hypothesis ====
+The right hemisphere hypothesis asserts that the right hemisphere of the neocortical structures is specialized for the expression and perception of emotion. The Right hemisphere has been linked with mental strategies that are nonverbal, synthetic, integrative, holistic, and Gestalt which makes it ideal for processing emotion. The right hemisphere is more in touch with subcortical systems of autonomic arousal and attention as demonstrated in patients that have increased spatial neglect when damage is associated to the right brain as opposed to the left brain. Right hemisphere pathologies have also been linked with abnormal patterns of autonomic nervous system responses. These findings would help signify the relationship of the subcortical brain regions to the right hemisphere as having a strong connection.
+
+
+==== The valence hypothesis ====
+The valence hypothesis acknowledges the right hemisphere's role in emotion, but asserts that it is mainly focused on the processing of negative emotions whereas the left hemisphere processes positive emotions. The mode of processing of the two hemispheres has been the discussion of much debate. One version suggests the lack of a specific mode of processes, stating that the right hemisphere is solely negative emotion and the left brain is solely positive emotion. A second version suggests that there is a complex mode of processing that occurs, specifically that there is a hemispheric specialization for the expressing and experiencing of emotion, with the right hemisphere predominating in the experiencing of both positive and negative emotion. More recently, the frontal lobe has been the focus of a large amount of research, stating that the frontal lobes of both hemispheres are involved in the emotional state, while the right posterior hemisphere, the parietal and temporal lobes, is involved in the processing of emotion. Decreased right parietal lobe activity has been associated with depression and increased right parietal lobe activity with anxiety arousal. The increasing understanding of the role the different hemispheres play has led to increasingly complicated models, all based some way on the original valence model.
+
+
+== Relationship to cognitive neuroscience ==
+Despite their interactions, the study of cognition has historically excluded emotion and focused on non-emotional processes (e.g., memory, attention, perception, action, problem solving and mental imagery). As a result, the study of the neural basis of non-emotional and emotional processes emerged as two separate fields: cognitive neuroscience and affective neuroscience. The distinction between non-emotional and emotional processes is now thought to be largely artificial, as the two types of processes often involve overlapping neural and mental mechanisms. Thus, when cognition is taken at its broadest definition, affective neuroscience could also be called the cognitive neuroscience of emotion.
+
+
+== Cognitive neuroscience tasks in affective neuroscience research ==
+
+
+=== Emotion Go/No-Go ===
+The emotion go/no-go task has been frequently used to study behavioral inhibition, particularly emotional modulation of this inhibition. A derivation of the original go/no-go paradigm, this task involves a combination of affective “go cues”, where the participant must make a motor response as quickly as possible, and affective “no-go cues,” where a response must be withheld. Because “go cues” are more common, the task is able to measure one’s ability to inhibit a response under different emotional conditions.
+The task is common in tests of emotion regulation, and is often paired with neuroimaging measures to localize relevant brain function in both healthy individuals and those with affective disorders. For example, go/no-go studies converge with other methodology to implicate areas of the prefrontal cortex during inhibition of emotionally valenced stimuli.
+
+
+=== Emotional Stroop ===
+The emotional Stroop task, an adaptation to the original Stroop, measures attentional bias to emotional stimuli. Participants must name the ink color of presented words while ignoring the words themselves. In general, participants have more difficulty detaching attention from affectively valenced words, than neutral words. This interference from valenced words is measured by the response latency in naming the color of neutral words as compared with emotional words.
+This task has been often used to test selective attention to threatening and other negatively valenced stimuli, most often in relation to psychopathology. Disorder specific attentional biases have been found for a variety of mental disorders. For example, participants with spider phobia show a bias to spider-related words but not other negatively valenced words. Similar findings have been attributed to threat words related to other anxiety disorders. However, other studies have questioned these findings. In fact, anxious participants in some studies show the Stroop interference effect for both negative and positive words, when the words are matched for emotionality. This means that the specificity effects for various disorders may be largely attributable to the semantic relation of the words to the concerns of the disorder, rather than simply the emotionality of the words.
+
+
+=== Ekman 60 faces task ===
+The Ekman faces task is used to measure emotion recognition of six basic emotions. Black and white photographs of 10 actors (6 male, 4 female) are presented, with each actor displaying each basic emotion. Participants are usually asked to respond quickly with the name of the displayed emotion. The task is a common tool to study deficits in emotion regulation in patients with dementia, Parkinson's, and other cognitively degenerative disorders. However, the task has also been used to analyze recognition errors in disorders such as borderline personality disorder, schizophrenia, and bipolar disorder.
+
+
+=== Dot probe (emotion) ===
+The emotional dot-probe paradigm is a task used to assess selective visual attention to and failure to detach attention from affective stimuli. The paradigm begins with a fixation cross at the center of a screen. An emotional stimulus and a neutral stimulus appear side by side, after which a dot appears behind either the neutral stimulus (incongruent condition) or the affective stimulus (congruent condition). Participants are asked to indicate when they see this dot, and response latency is measured. Dots that appear on the same side of the screen as the image the participant was looking at will be identified more quickly. Thus, it is possible to discern which object the participant was attending to by subtracting the reaction time to respond to congruent versus incongruent trials.
+The best documented research with the dot probe paradigm involves attention to threat related stimuli, such as fearful faces, in individuals with anxiety disorders. Anxious individuals tend to respond more quickly to congruent trials, which may indicate vigilance to threat and/or failure to detach attention from threatening stimuli. A specificity effect of attention has also been noted, with individuals attending selectively to threats related to their particular disorder. For example, those with social phobia selectively attend to social threats but not physical threats. However, this specificity may be even more nuanced. Participants with obsessive-compulsive disorder symptoms initially show attentional bias to compulsive threat, but this bias is attenuated in later trials due to habituation to the threat stimuli.
+
+
+=== Fear potentiated startle ===
+Fear-potentiated startle (FPS) has been utilized as a psychophysiological index of fear reaction in both animals and humans. FPS is most often assessed through the magnitude of the eyeblink startle reflex, which can be measured by electromyography. This eyeblink reflex is an automatic defensive reaction to an abrupt elicitor, making it an objective indicator of fear. Typical FPS paradigms involve bursts of noise or abrupt flashes of light transmitted while an individual attends to a set of stimuli. Startle reflexes have been shown to be modulated by emotion. For example, healthy participants tend to show enhanced startle responses while viewing negatively valenced images and attenuated startle while viewing positively valenced images, as compared with neutral images.
+The startle response to a particular stimulus is greater under conditions of threat. A common example given to indicate this phenomenon is that one’s startle response to a flash of light will be greater when walking in a dangerous neighborhood at night than it would under safer conditions. In laboratory studies, the threat of receiving shock is enough to potentiate startle, even without any actual shock.
+Fear potentiated startle paradigms are often used to study fear learning and extinction in individuals with posttraumatic stress disorder and other anxiety disorders. In fear conditioning studies, an initially neutral stimulus is repeatedly paired with an aversive one, borrowing from classical conditioning. FPS studies have demonstrated that PTSD patients have enhanced startle responses during both danger cues and neutral/safety cues as compared with healthy participants.
+
+
+== Learning ==
+There are many ways affect plays a role during learning. Recently, affective neuroscience has done much to discover this role. Deep, emotional attachment to a subject area allows a deeper understanding of the material and therefore, learning occurs and lasts. When reading, the emotions one is feeling in comparison to the emotions being portrayed in the content affects ones comprehension. Someone who is feeling sad will understand a sad passage better than someone feeling happy. Therefore, a student’s emotion plays a big role during the learning process.
+Emotion can also be embodied or perceived from words read on a page or a person’s facial expression. Neuroimaging studies using fMRI have demonstrated that the same area of the brain being activated when one is feeling disgust is also activated when one observes another person feeling disgust. In a traditional learning environment, the teacher's facial expression can play a critical role in students' language acquisition. Showing a fearful facial expression when reading passages that contain fearful tones facilitates students learning of the meaning of certain vocabulary words and comprehension of the passage.
+
+
+== Meta-analyses ==
+A meta-analysis is a statistical approach to synthesizing results across multiple studies. Several meta-analyses examining the brain basis of emotion have been conducted. In each meta-analysis, studies were included that investigate healthy, unmedicated adults and that used subtraction analysis to examine the areas of the brain that were more active during emotional processing than during a neutral control condition. The meta-analyses to date predominantly focus on two theoretical approaches, locationist approaches and psychological construction approaches.
+It is being debated regarding the existence of the neurobiological basis of emotion. The existence of so-called 'basic emotions' and their defining attributes represents a long lasting and yet unsettled issue in psychology. The available research suggests that the neurobiological existence of basic emotions is still tenable and heuristically seminal, pending some reformulation.
+
+
+=== Locationist approaches ===
+These approaches to emotion hypothesize that several emotion categories (including happiness, sadness, fear, anger, and disgust) are biologically basic. In this view, emotions are inherited biologically based modules that cannot be broken down into more basic psychological components. Models following a locationist approach to emotion hypothesize that all mental states belonging to a single emotional category can be consistently and specifically localized to either a distinct brain region or a defined networks of brain regions. Each basic emotion category also shares other universal characteristics: distinct facial behavior, physiology, subjective experience and accompanying thoughts and memories.
+
+
+=== Psychological constructionist approaches ===
+This approach to emotion hypothesizes that emotions like happiness, sadness, fear, anger and disgust (and many others) are constructed mental states that occur when many different systems in the brain work together. In this view, networks of brain regions underlie psychological operations (e.g., language, attention, etc.) that interact to produce many different kinds of emotion, perception, and cognition. One psychological operation critical for emotion is the network of brain regions that underlie valence (feeling pleasant/unpleasant) and arousal (feeling activated and energized). Emotions emerge when neural systems underlying different psychological operations interact (not just those involved in valence and arousal), producing distributed patterns of activation across the brain. Because emotions emerge from more basic components, there is heterogeneity within each emotion category; for example, a person can experience many different kinds of fear, which feel differently, and which correspond to different neural patterns in the brain. Thus, this view presents a different approach to understanding the neural bases of emotion than locationist approaches.
+
+
+=== Phan et al. 2002 ===
+In the first neuroimaging meta-analysis of emotion, Phan et al. (2002) analyzed the results of 55 studies published in peer reviewed journal articles between January 1990 and December 2000 to determine if the emotions of fear, sadness, disgust, anger, and happiness were consistently associated with activity in specific brain regions. All studies used fMRI or PET techniques to investigate higher-order mental processing of emotion (studies of low-order sensory or motor processes were excluded). The authors’ analysis approach was to tabulate the number of studies that reported activation in specific brain regions during tasks inducing fear, sadness, disgust, anger, and happiness. For each brain region, statistical chi-squared analysis was conducted to determine if the proportion of studies reporting activation during one emotion was significantly higher than the proportion of studies reporting activation during the other emotions. Two regions showed this statistically significant pattern across studies. In the amygdala, 66% of studies inducing fear reported activity in this region, as compared to ~20% of studies inducing happiness, ~15% of studies inducing sadness (with no reported activations for anger or disgust). In the subcallosal cingulate, 46% of studies inducing sadness reported activity in this region, as compared to ~20% inducing happiness and ~20% inducing anger. This pattern of clear discriminability between emotion categories was in fact rare, with a number of other patterns occurring in limbic regions (including amydala, hippocampus, hypothalamus, and orbitofrontal cortex), paralimbic regions (including subcallosal cingulate, medial prefrontal cortex, anterior cingulate cortex, posterior cingulate cortex, insula, and temporal pole), and uni/heteromodal regions (including lateral prefrontal cortex, primary sensorimotor cortex, temporal cortex, cerebellum, and brainstem). Brain regions implicated across discrete emotion included the basal ganglia (~60% of studies inducing happiness and ~60% of studies inducing disgust reported activity in this region) and medial prefrontal cortex (happiness ~60%, anger ~55%, sadness ~40%, disgust ~40%, and fear ~30%).
+
+
+=== Murphy et al. 2003 ===
+Murphy, et al. 2003 analyzed 106 peer reviewed journals published between January 1994 and December 2001 to examine the evidence for regional specialization of discrete emotions (fear, disgust, anger, happiness and sadness) across a larger set of studies that Phan et al. Studies included in the meta-analysis measured activity in the whole brain and regions of interest (activity in individual regions of particular interest to the study). 3-D Kolmogorov-Smirnov (KS3) statistics were used to compare rough spatial distributions of 3-D activation patterns to determine if statistically significant activations (consistently activated across studies) were specific to particular brain regions for all emotional categories. This pattern of consistently activated, regionally specific activations was identified in four brain regions: amygdala with fear, insula with disgust, globus pallidus with disgust, and lateral orbitofrontal cortex with anger. The amygdala was consistently activated in ~40% of studies inducing fear, as compared to less than 20% studies inducing happiness, sadness, or anger. The insula was consistently activated in ~ 70% of studies inducing disgust, as compared to sadness (~40%), anger (~20%), fear (~20%), and happiness (~10%). Similar to the insula, the globus pallidus was consistently activated in ~70% of studies inducing disgust, as compared to less than 25% of studies inducing sadness, fear, anger or happiness. The lateral orbitofrontal cortex was consistently activated in over 80% of studies inducing anger, as compared to fear (~30%), sadness (~20%), happiness (< 20%) and disgust (< 20%). Other regions showed different patterns of activation across categories. For example, both the dorsal medial prefrontal cortex and the rostral anterior cingulate cortex showed consistent activity across emotions (happiness ~50%, sadness ~50%, anger ~ 40%, fear ~30%, and disgust ~ 20%).
+
+
+=== Barrett et al. 2006 ===
+Barrett, et al. 2006 examined 161 studies published between 1990-2001, subsets of which were analyzed in previous meta-analyses (Phan, et al. 2002 and Murphy et al. 2003). In this review, the authors examined the locationist hypothesis by comparing the consistency and specificity of prior meta-analytic findings specific to each hypothesized basic emotion (fear, anger, sadness, disgust, and happiness). Consistent neural patterns were defined by brain regions showing increased activity for a specific emotion (relative to a neutral control condition), regardless of the method of induction used (for example, visual vs. auditory cue). Specific neural patterns were defined as architecturally separate circuits for one emotion vs. the other emotions (for example, the fear circuit must be discriminable from the anger circuit, although both circuits may include common brain regions). In general, the results supported consistency among the findings of Phan et al. and Murphy et al., but not specificity. Consistency was determined through the comparison of chi-squared analyses that revealed whether the proportion of studies reporting activation during one emotion was significantly higher than the proportion of studies reporting activation during the other emotions. Specificity was determined through the comparison of emotion-category brain-localizations by contrasting activations in key regions that were specific to particular emotions. Increased amygdala activation during fear was the most consistently reported across induction methods (but not specific). Both meta-analyses also reported increased activations in regions of the anterior cingulate cortex during sadness, although this finding was less consistent (across induction methods) and was not specific to sadness. Both meta-analyses also found that disgust was associated with increased activity in the basal ganglia, but these findings were neither consistent nor specific. Neither consistent nor specific activity was observed across the meta-analyses for anger or for happiness. This meta-analysis additionally introduced the concept of the basic, irreducible elements of emotional life as dimensions such as approach and avoidance. This dimensional approach involved in psychological constructionist approaches is further examined in later meta-analyses of Kober et al. 2008 and Lindquist et al. 2012.
+
+
+=== Kober et al. 2008 ===
+Instead of investigating specific emotions, Kober, et al. 2008 reviewed 162 neuroimaging studies published between 1990-2005 to determine if groups of brain regions show consistent patterns of activation during emotional experience (that is, actively experiencing an emotion first-hand) and during emotion perception (that is, perceiving a given emotion as experienced by another). This meta-analysis used multilevel kernal density analysis (MKDA) to examine fMRI and PET studies, a technique that prevents single studies from dominating the results (particularly if they report multiple nearby peaks) and that enables studies with large sample sizes (those involving more participants) to exert more influence upon the results. MKDA was used to establish a neural reference space that includes the set of regions showing consistent increases across all studies (for further discussion of MDKA see Wager et al. 2007). Next, this neural reference space was partitioned into functional groups of brain regions showing similar activation patterns across studies by first using multivariate techniques to determine co-activation patterns and then using data-reduction techniques to define the functional groupings (resulting in six groups). Consistent with a psychological construction approach to emotion, the authors discuss each functional group in terms more basic psychological operations. The first “Core Limbic” group included the left amygdala, hypothalamus, periaqueductal gray/thalamus regions, and amygdala/ventral striatum/ventral globus pallidus/thalamus regions, which the authors discuss as an integrative emotional center that plays a general role in evaluating affective significance. The second “Lateral Paralimbic” group included the ventral anterior insula/frontal operculum/right temporal pole/ posterior orbitofrontal cortex, the anterior insula/ posterior orbitofrontal cortex, the ventral anterior insula/ temporal cortex/ orbitofrontal cortex junction, the midinsula/ dorsal putamen, and the ventral striatum /mid insula/ left hippocampus, which the authors suggest plays a role in motivation, contributing to the general valuation of stimuli and particularly in reward. The third “Medial Prefrontal Cortex” group included the dorsal medial prefrontal cortex, pregenual anterior cingulate cortex, and rostral dorsal anterior cingulate cortex, which the authors discuss as playing a role in both the generation and regulation of emotion. The fourth “Cognitive/ Motor Network” group included right frontal operculum, the right interior frontal gyrus, and the pre-supplementray motor area/ left interior frontal gyrus, regions that are not specific to emotion, but instead appear to play a more general role in information processing and cognitive control. The fifth “Occipital/ Visual Association” group included areas V8 and V4 of the primary visual cortex, the medial temporal lobe, and the lateral occipital cortex, and the sixth “Medial Posterior” group included posterior cingulate cortex and area V1 of the primary visual cortex. The authors suggest that these regions play a joint role in visual processing and attention to emotional stimuli.
+
+
+=== Vytal et al. 2010 ===
+Vytal, et al. 2010 examined 83 neuroimaging studies published between 1993-2008 to examine whether neuroimaging evidence supports the idea of biologically discrete, basic emotions (i.e. fear, anger, disgust, happiness, and sadness). Consistency analyses identified brain regions that were associated with a given emotion. Discriminability analyses identified brain regions that were significantly, differentially active when contrasting pairs of discrete emotions. This meta-analysis examined PET or fMRI studies that reported whole brain analyses identifying significant activations for at least one of the five emotions relative to a neutral or control condition. The authors used activation likelihood estimation (ALE) to perform spatially sensitive, voxel-wise (sensitive to the spatial properties of voxels) statistical comparisons across studies. This technique allows for direct statistical comparison between activation maps associated with each discrete emotion. Thus, discriminability between the five discrete emotion categories was assessed on a more precise spatial scale than what had been accomplished in prior meta-analyses. Consistency was first assessed by comparing the ALE map generated across studies for each emotion (for example, the ALE map identifying regions consistently activated by studies inducing fear) to ALE map generated by random permutations. Discriminability was then assessed by pair-wise contrasts of individual emotion ALE maps (for example, fear ALE map vs. anger ALE map; fear ALE map vs. disgust map) across all basic emotions pairings. Consistent and discriminable patterns of neural activation were observed for the five emotional categories. Happiness was consistently associated with activity in 9 regional brain clusters, the largest located in the right superior temporal gyrus. For the first time, happiness was discriminated from the other emotional categories, with the largest clusters of activity specific to happiness (vs. the other emotion categories) located in right superior temporal gyrus and left rostral anterior cingulate cortex. Sadness was consistently associated with 35 clusters (the largest activation cluster located in the left medial frontal gyrus) and was discriminated from the other emotion categories by significantly greater activity in left medial frontal gyrus, right middle temporal gyrus, and right inferior frontal gyrus. Anger was consistently associated with activity in 13 clusters (the largest of which was located in the left inferior frontal gyrus), and was discriminated from the other emotion categories by significantly greater activity in bilateral inferior frontal gyrus, and in right parahippocampal gyrus. Fear was consistently associated with 11 clusters (the largest activation cluster in the left amygdala) and was discriminated from the other emotion categories by significantly greater activity in the left amygdala and left putamen. Disgust was consistently activated with 16 clusters (the largest activation cluster in the right insula/ right inferior frontal gyrus) and was discriminated from the other emotion categories by significantly greater activity in the right putamen and the left insula.
+
+
+=== Lindquist et al. 2012 ===
+Lindquist, et al. 2012 reviewed 91 PET and fMRI studies published between January 1990 and December 2007. The studies included in this meta-analysis used induction methods that elicit emotion experience or emotion perception of fear, sadness, disgust, anger, and happiness. The goal was to compare locationist approaches with psychological constructionist approaches to emotion. Similar to Kober et al. described above, a Multilevel Peak Kernel Density Analysis transformed the individual peak activations reported across study contrasts into a neural reference space (in other words, the set of brain regions consistently active across all study contrasts assessing emotion experience or perception). The density analysis was then used to identify voxels within the neural reference space with more consistent activations for a specific emotion category (anger, fear, happiness, sadness, and disgust) than all other emotions. Chi-squared analysis was used to create statistical maps that indicated if each previously identified and consistently active regions (those identified during density analysis) were more frequently activated in studies of each emotion category versus the average of all other emotions, regardless of activations elsewhere in the brain. Chi-squared analysis and density analysis both defined functionally consistent and selective regions, or regions which showed a relatively more consistent increase in activity for the experience or perception of one emotion category across studies in the literature. Thus, a selective region could present increased activations relatively more so to one emotion category while also having a response to multiple other emotional categories. A series of logistic regressions were then performed to identify if any of the regions that were identified as consistent and selective to an emotion category were additionally specific to a given category. Regions were defined as specific to a given emotion if they showed increased activations for only one emotional category, and never showed increased activity during instances of the other emotional categories. In other words, a region could be defined as consistent, selective and specific for e.g. fear perception if it only showed significantly greater increases in activation during the perception of fear and did not show increased activity during any other emotion categories. However, the same region would be defined as only consistent and selective (and not specific) to fear perception if it additionally displayed increased activations during anger perception. Strong support for the locationist approach was defined as evidence that basic emotion categories (anger, disgust, fear, happiness and sadness) consistently map onto areas of the brain that specifically activate in response to instances of only one emotional category. Strong support for the constructionist approach was defined as evidence that multiple psychological operations (some of which are not specific or selective to emotion) consistently occur across many brain regions and multiple emotional categories.
+The results indicated that many brain regions demonstrated consistent and selective activations in the experience or perception of an emotion category (versus all the other emotion categories). Consistent with constructionist models, however, no region demonstrated functional specificity for the emotions of fear, disgust, happiness, sadness or anger. Based on the existing scientific literature, the authors proposed different roles for the brain regions that have traditionally been associated with only one emotion category. The authors propose that the amygdala, anterior insula, orbitofrontal cortex each contribute to “core affect,” which are basic feelings that are pleasant or unpleasant with some level of arousal. The amygdala, for example, appears to play a more general role in indicating if external sensory information is motivationally salient, and is particularly active when a stimulus is novel or evokes uncertainty. The anterior insula may represent core affective feelings in awareness across a number of emotion categories, driven largely by sensations originating in the body. The orbitofrontal cortex appears to function as a site for integrating sensory information from the body and sensory information from the world to guide behavior. Closely related to core affect, the authors propose that anterior cingulate and dorsolateral prefrontal cortex play vital roles in attention, with anterior cingulate supporting the use of sensory information for directing attention and motor responses during response selection and with dorsolateral prefrontal cortex supporting executive attention. In many psychological construction approaches, emotions also involve the act of interpreting one’s situation in the world relative to the internal state of the body, or what is referred to as “conceptualization.” In support of this idea, the dorsomedial prefrontal cortex and hippocampus were consistently active in this meta-analysis, regions that appear to play an important role conceptualizing during emotion, which are also involved in simulating previous experience (e.g. knowledge, memory). Language is also central to conceptualizing, and regions that support language, including ventrolateral prefrontal cortex, were also consistently active across studies of emotion experience and perception.
+
+
+== See also ==
+
+
+== References ==
+
+
+== Further reading ==
+Davidson, R.J.; Irwin, W. (1999). "The functional neuroanatomy of emotion and affective style". Trends in Cognitive Science. 3: 11–21. doi:10.1016/s1364-6613(98)01265-0. 
+Freitas-Magalhaes, A. (2009). Emotional Expression: The Brain and The Face. Porto: University Fernando Pessoa Press. ISBN 978-989-643-034-4
+Panksepp, J. (1992). "A critical role for affective neuroscience in resolving what is basic about basic emotions". Psychological Review. 99 (3): 554–60. doi:10.1037/0033-295x.99.3.554. PMID 1502276. 
+Harmon-Jones E, & Winkielman P. (Eds.) Social Neuroscience: Integrating Biological and Psychological Explanations of Social Behavior. New York: Guilford Publications.
+Cacioppo, J.T., & Berntson, G.G. (2005). Social Neuroscience. Psychology Press.
+Cacioppo, J.T., Tassinary, L.G., & Berntson, G.G. (2007). Handbook of Psychophysiology. Cambridge University Press.
+Panksepp J. (1998). Affective Neuroscience: The Foundations of Human and Animal Emotions (Series in Affective Science). Oxford University Press, New York, New York.
+Brain and Cognition, Vol. 52, No. 1, pp. 1–133 (June, 2003). Special Issue on Affective Neuroscience.The following outline is provided as an overview of and topical guide to neuroscience:
+Neuroscience is the scientific study of the nervous system. It is the branch of biology that deals with the anatomy, biochemistry, molecular biology, and physiology of neurons and neural circuits.
+
+
+== Branches of neuroscience ==
+
+
+=== Neurophysiology ===
+Neurophysiology is the study of the function (as opposed to structure) of the nervous system.
+Brain mapping
+Electrophysiology
+Extracellular recording
+Intracellular recording
+Brain stimulation
+Electroencephalography
+Intermittent rhythmic delta activity
+
+Category:Neurophysiology
+
+
+=== Neuroanatomy ===
+Neuroanatomy is the study of the anatomy of nervous tissue and neural structures of the nervous system.
+Immunostaining
+Category:Neuroanatomy
+
+
+=== Neuropharmacology ===
+Neuropharmacology is the study of how drugs affect cellular function in the nervous system.
+Drug
+Psychoactive drug
+Anaesthetic
+Narcotic
+
+
+=== Behavioral neuroscience ===
+Behavioral neuroscience, also known as biological psychology, biopsychology, or psychobiology, is the application of the principles of biology to the study of mental processes and behavior in human and non-human animals.
+Neuroethology
+
+
+=== Developmental neuroscience ===
+Developmental neuroscience aims to describe the cellular basis of brain development and to address the underlying mechanisms. The field draws on both neuroscience and developmental biology to provide insight into the cellular and molecular mechanisms by which complex nervous systems develop.
+
+
+=== Cognitive neuroscience ===
+Cognitive neuroscience is concerned with the scientific study of biological substrates underlying cognition, with a focus on the neural substrates of mental processes.
+Neurolinguistics
+Neuroimaging
+functional Magnetic Resonance Imaging
+Positron emission tomography
+
+
+=== Systems neuroscience ===
+Systems neuroscience is a subdiscipline of neuroscience which studies the function of neural circuits and systems. It is an umbrella term, encompassing a number of areas of study concerned with how nerve cells behave when connected together to form neural networks.
+Neural oscillation
+
+
+=== Molecular neuroscience ===
+Molecular neuroscience is a branch of neuroscience that examines the biology of the nervous system with molecular biology, molecular genetics, protein chemistry and related methodologies.
+Nutritional neuroscience
+Neurochemistry
+
+
+=== Computational neuroscience ===
+Computational neuroscience includes both the study of the information processing functions of the nervous system, and the use of digital computers to study the nervous system. It is an interdisciplinary science that links the diverse fields of neuroscience, cognitive science and psychology, electrical engineering, computer science, physics and mathematics.
+Neural network
+Neuroinformatics
+Brain–computer interface
+Mathematical neuroscience
+
+
+=== Neurophilosophy ===
+Neurophilosophy or "philosophy of neuroscience" is the interdisciplinary study of neuroscience and philosophy. Work in this field is often separated into two distinct approaches. The first approach attempts to solve problems in philosophy of mind with empirical information from the neurosciences. The second approach attempts to clarify neuroscientific results using the conceptual rigor and methods of philosophy of science.
+Criticism of the scientific status of neuroscience
+Philosophy of mind
+Neuroethics
+Neuroscience of free will
+
+
+=== Neurology ===
+Neurology is the medical specialty dealing with disorders of the nervous system. It deals with the diagnosis and treatment of all categories of disease involving the central, peripheral, and autonomic nervous systems.
+Stroke
+Parkinson's disease
+Alzheimer's disease
+Huntington's disease
+Multiple sclerosis
+Amyotrophic lateral sclerosis
+Rabies
+Schizophrenia
+Epilepsy
+Hydrocephalus
+Brain damage
+Traumatic brain injury
+Closed head injury
+Coma
+Paralysis
+Level of consciousness
+Neurosurgery
+
+
+=== Neuropsychology ===
+Neuropsychology studies the structure and function of the brain related to psychological processes and behaviors. The term is used most frequently with reference to studies of the effects of brain damage in humans and animals.
+Agraphia
+Agnosia
+Alexia
+Amnesia
+Anosognosia
+Aphasia
+Apraxia
+Dementia
+Dyslexia
+Hemispatial Neglect
+Neurobiological effects of physical exercise
+
+
+=== Neuroevolution ===
+Evolution of nervous systems
+Neuroevolution
+Noogenesis
+
+
+== History of neuroscience ==
+History of neuroscience
+Neuron doctrine
+Category:History of neuroscience
+
+
+== Nervous system ==
+Outline of the human nervous system
+Action potential
+Acetylcholine
+Acetylcholinesterase
+Aging and memory
+Albert Einstein's brain
+Brain
+Central nervous system (CNS)
+Dendrite
+Dopamine
+Glial cells
+Human brain
+Long-term potentiation
+Nervous system
+Neurite
+Neuron
+Neuroplasticity
+Neurotransmitter
+Synapse
+Synaptic plasticity
+
+
+== Neuroscience organizations ==
+List of neuroscience organizations
+
+
+== Persons influential in the field of neuroscience ==
+List of neuroscientists
+Category:Neuroscientists
+
+
+== Related sciences ==
+Genetics
+Neurochemistry
+Cognitive science
+Psychology
+Molecular biology
+Psychiatry
+Neurosurgery
+Linguistics
+Developmental biology
+Biotechnology
+Neurophilosophy
+
+
+== See also ==
+
+Fundamentals of Neuroscience at Wikiversity
+
+
+== References ==
+
+
+== External links ==
+
+Neuroscience on In Our Time at the BBC.
+Neuroscience Information Framework (NIF)
+Outline of neuroscience at Curlie (based on DMOZ)
+American Society for Neurochemistry
+Neuroscience Online (electronic neuroscience textbook)
+Faculty for Undergraduate Neuroscience (FUN)
+Neuroscience for Kids
+Neuroscience Discussion Group in ResearchGate
+Neuroscience Discussion Forum
+HHMI Neuroscience lecture series - Making Your Mind: Molecules, Motion, and MemoryThe salience (also called saliency) of an item – be it an object, a person, a pixel, etc. – is the state or quality by which it stands out relative to its neighbors. Saliency detection is considered to be a key attentional mechanism that facilitates learning and survival by enabling organisms to focus their limited perceptual and cognitive resources on the most pertinent subset of the available sensory data.
+Saliency typically arises from contrasts between items and their neighborhood, such as a red dot surrounded by white dots, a flickering message indicator of an answering machine, or a loud noise in an otherwise quiet environment. Saliency detection is often studied in the context of the visual system, but similar mechanisms operate in other sensory systems. What is salient can be influenced by training: for example, for human subjects particular letters can become salient by training.
+When attention deployment is driven by salient stimuli, it is considered to be bottom-up, memory-free, and reactive. Conversely, attention can also be guided by top-down, memory-dependent, or anticipatory mechanisms, such as when looking ahead of moving objects or sideways before crossing streets. Humans and other animals have difficulty paying attention to more than one item simultaneously, so they are faced with the challenge of continuously integrating and prioritizing different bottom-up and top-down influences.
+
+
+== Neuroanatomy ==
+The brain component named the hippocampus helps with the assessment of salience and context by using past memories to filter new incoming stimuli, and placing those that are most important into long term memory. The entorhinal cortex is the pathway into and out of the hippocampus, and is an important part of the brain's memory network; research shows that it is a brain region that suffers damage early on in Alzheimer's disease, one of the effects of which is altered (diminished) salience.
+The pulvinar nuclei (in the thalamus) modulates physical/perceptual salience in attentional selection.
+One group of neurons (i.e., D1-type medium spiny neurons) within the nucleus accumbens shell (NAcc shell) assigns appetitive motivational salience ("want" and "desire", which includes a motivational component), aka incentive salience, to rewarding stimuli, while another group of neurons (i.e., D2-type medium spiny neurons) within the NAcc shell assigns aversive motivational salience to aversive stimuli.
+
+
+== In psychology ==
+The term is widely used in the study of perception and cognition to refer to any aspect of a stimulus that, for any of many reasons, stands out from the rest. Salience may be the result of emotional, motivational or cognitive factors and is not necessarily associated with physical factors such as intensity, clarity or size. Although salience is thought to determine attentional selection, salience associated with physical factors does not necessarily influence selection of a stimulus.
+
+
+== Aberrant salience hypothesis of schizophrenia ==
+Kapur (2003) proposed that a hyperdopaminergic state, at a "brain" level of description, leads to an aberrant assignment of salience to the elements of one's experience, at a "mind" level. These aberrant salience attributions have been associated with altered activities in the mesolimbic system, including the striatum, the amygdala, the hippocampus, and the parahippocampal gyrus. Dopamine mediates the conversion of the neural representation of an external stimulus from a neutral bit of information into an attractive or aversive entity, i.e. a sali
