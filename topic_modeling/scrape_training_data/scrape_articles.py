@@ -31,14 +31,14 @@ def is_good_response(resp):
     Returns true if the response seems to be HTML, false otherwise
     """
     content_type = resp.headers['Content-Type'].lower()
-    return (resp.status_code == 200 
-            and content_type is not None 
+    return (resp.status_code == 200
+            and content_type is not None
             and content_type.find('html') > -1)
 
 
 def log_error(e):
     """
-    It is always a good idea to log errors. 
+    It is always a good idea to log errors.
     This function just prints them, but you can
     make it do anything.
     """
@@ -61,7 +61,8 @@ if not os.path.exists(article_directory):
     os.makedirs(article_directory)
 
 # read in article links
-links_pandas = pd.read_csv(os.path.join(base_dir, 'article_links.txt'), header=None)
+links_pandas = pd.read_csv(
+    os.path.join(base_dir, 'article_links.txt'), header=None)
 links = links_pandas[0]
 
 for link in links:
@@ -70,8 +71,9 @@ for link in links:
     raw_html = simple_get(link)
 
     title = link.split('/')[-1]
-    
-    if not os.path.exists(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(title))):
+
+    if not os.path.exists(os.path.join(
+            base_dir, 'the_dartmouth', '{0}.txt'.format(title))):
 
         html = BeautifulSoup(raw_html, 'html.parser')
         html = html.findAll('p', attrs={'class': None})
@@ -87,11 +89,15 @@ for link in links:
 
             short_title = title[0:199]
 
-            with open(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(short_title)), "wb") as text_file:
+            with open(os.path.join(
+                base_dir, 'the_dartmouth', '{0}.txt'.format(short_title)),
+                    "wb") as text_file:
                     text_file.write(s.encode('utf8'))
         else:
 
-            with open(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(title)), "wb") as text_file:
+            with open(os.path.join(
+                base_dir, 'the_dartmouth', '{0}.txt'.format(title)),
+                    "wb") as text_file:
                     text_file.write(s.encode('utf8'))
 
         # Pause the loop

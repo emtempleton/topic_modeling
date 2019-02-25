@@ -5,8 +5,11 @@ from random import randint
 from IPython.core.display import clear_output
 from time import time
 
-pages = [str(page_counter) for page_counter in range(0, 4)]  # change range to 0,50 when using cluster
-year_urls = [years_counter for years_counter in range(2015, 2016)]  # change range to 2012,2019 when using cluster
+# change range to 0,50 when using cluster
+pages = [str(page_counter) for page_counter in range(0, 4)]
+
+# change range to 2012,2019 when using cluster
+year_urls = [years_counter for years_counter in range(2015, 2016)]
 
 article_links = []
 
@@ -17,9 +20,11 @@ for year_url in year_urls:
 
     for page in pages:
 
-        html_page = urllib.request.urlopen('http://www.thedartmouth.com/search?q=0&page=' + page +
-                                           '&ti=0&tg=0&ty=0&ts_month=0&ts_day=0&ts_year=' + str(year_url) +
-                                           '&te_month=0&te_day=0&te_year=' + str(year_url + 1) + '&s=0&au=0&o=0&a=1')
+        html_page = urllib.request.urlopen(
+            'http://www.thedartmouth.com/search?q=0&page=' +
+            page + '&ti=0&tg=0&ty=0&ts_month=0&ts_day=0&ts_year=' +
+            str(year_url) + '&te_month=0&te_day=0&te_year=' +
+            str(year_url + 1) + '&s=0&au=0&o=0&a=1')
 
         # Pause the loop
         sleep(randint(8, 15))
@@ -27,7 +32,8 @@ for year_url in year_urls:
         # Monitor the requests
         requests += 1
         elapsed_time = time() - start_time
-        print('Request:{}; Frequency: {} requests/s'.format(requests, requests / elapsed_time))
+        print('Request:{}; Frequency: {} requests/s'.format(
+            requests, requests / elapsed_time))
         clear_output(wait=True)
 
         soup = BeautifulSoup(html_page)
