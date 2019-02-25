@@ -2,16 +2,12 @@ from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
-import re
-import string
-import glob
-import os
 import urllib.request
 from time import sleep
 from random import randint
 from IPython.core.display import clear_output
 from time import time
-import os.path
+
 
 def simple_get(url):
     """
@@ -40,6 +36,7 @@ def is_good_response(resp):
             and content_type is not None 
             and content_type.find('html') > -1)
 
+
 def log_error(e):
     """
     It is always a good idea to log errors. 
@@ -49,8 +46,8 @@ def log_error(e):
     print(e)
 
 
-pages = [str(i) for i in range(1,2)] #should go 1,50
-years_url = [i for i in range(2015,2016)]
+pages = [str(i) for i in range(1, 2)]  # should go 1,50
+years_url = [i for i in range(2015, 2016)]
 
 article_links = []
 
@@ -66,24 +63,23 @@ for year_url in years_url:
                                            '&te_month=0&te_day=0&te_year=' + str(year_url+1) + '&s=0&au=0&o=0&a=1')
         
         # Pause the loop
-        sleep(randint(8,15))
+        sleep(randint(8, 15))
 
         # Monitor the requests
         requests += 1
         elapsed_time = time() - start_time
         print('Request:{}; Frequency: {} requests/s'.format(requests, requests/elapsed_time))
-        clear_output(wait = True)
+        clear_output(wait=True)
 
         # Throw a warning for non-200 status codes
-        #if response.status_code != 200:
+        # if response.status_code != 200:
         #    warn('Request: {}; Status code: {}'.format(requests, response.status_code))
 
-        #Break the loop if the number of requests is greater than expected
-        #if requests > 72:
+        # Break the loop if the number of requests is greater than expected
+        # if requests > 72:
         #    warn('Number of requests was greater than expected.')  
         #    break 
-                                           
-                                           
+
         soup = BeautifulSoup(html_page)
                                            
         links = []
@@ -92,7 +88,7 @@ for year_url in years_url:
                                            
         for link in links:
             try:
-                if (link.split('/')[1] == 'article'):
+                if link.split('/')[1] == 'article':
                     article_links.append('http://www.thedartmouth.com{0}'.format(link))
             except IndexError:
                 continue
