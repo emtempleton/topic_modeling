@@ -44,46 +44,55 @@ def log_error(e):
     """
     print(e)
 
-base_dir = '/dartfs-hpc/rc/home/5/f002s75/web_scraping'
-links = pd.read_csv(os.path.join(base_dir, 'article_links.txt'), header=None)
-links = links[0]
+
+def test_simple_get():
+    assert simple_get('https://www.google.com/') is not None
+
+
+def test_log_error():
+    assert log_error('This is a test') == print('This is a test')
+
+
+base_dir = os.getcwd()
+
+# make directory to hold articles
+article_directory = os.path.join(base_dir, 'the_dartmouth')
+if not os.path.exists(article_directory):
+    os.makedirs(article_directory)
+
+# read in article links
+links_pandas = pd.read_csv(os.path.join(base_dir, 'article_links.txt'), header=None)
+links = links_pandas[0]
 
 for link in links:
 
-    paragraphs = []
+    article_text = []
     raw_html = simple_get(link)
 
     title = link.split('/')[-1]
     
     if not os.path.exists(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(title))):
 
-        try:
+        html = BeautifulSoup(raw_html, 'html.parser')
+        html = html.findAll('p', attrs={'class': None})
 
-            html = BeautifulSoup(raw_html, 'html.parser')
-            html = html.findAll('p', attrs={'class': None})
+        for line_num, line_text in enumerate(html):
+            article_text.append(line_text.text)
 
-            for i, p in enumerate(html):
-                result = (i, p.text)
-                paragraphs.append(p.text)
+        paragraphs = article_text[2:]  # get rid of header info
+        s = ' '.join(paragraphs)
+        s = s.split('\n', 1)[0]
 
-            paragraphs = paragraphs[2:]  # this is a crappy way to get rid of the article info, but seems consistent
-            s = ''.join(paragraphs)
-            sep = '\n'
-            s = s.split(sep, 1)[0]
+        if len(title) > 200:
 
-            if len(title) > 200:
+            short_title = title[0:199]
 
-                short_title = title[0:199]
+            with open(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(short_title)), "wb") as text_file:
+                    text_file.write(s.encode('utf8'))
+        else:
 
-                with open(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(short_title)), "wb") as text_file:
-                        text_file.write(s.encode('utf8'))
-            else:
+            with open(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(title)), "wb") as text_file:
+                    text_file.write(s.encode('utf8'))
 
-                with open(os.path.join(base_dir, 'the_dartmouth', '{0}.txt'.format(title)), "wb") as text_file:
-                        text_file.write(s.encode('utf8'))
-
-            # Pause the loop
-            sleep(randint(8, 15))
-
-        except TypeError:
-            pass
+        # Pause the loop
+        sleep(randint(8, 15))
