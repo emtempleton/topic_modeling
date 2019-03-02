@@ -87,9 +87,10 @@ for link in links:
         s = ' '.join(paragraphs)
         s = s.split('\n', 1)[0]
 
-        with open(os.path.join(
-                    base_dir, 'the_dartmouth', '{0}.txt'.format(title[:199])),
-                "wb") as text_file:
+        with open(
+                os.path.join(
+                    base_dir, 'the_dartmouth', '{0}.txt'.format(title[:199])
+                    ), "wb") as text_file:
             text_file.write(s.encode('utf8'))
 
         # Pause the loop
