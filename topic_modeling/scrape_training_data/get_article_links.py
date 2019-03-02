@@ -36,7 +36,7 @@ for year_url in year_urls:
             requests, requests / elapsed_time))
         clear_output(wait=True)
 
-        soup = BeautifulSoup(html_page)
+        soup = BeautifulSoup(html_page, 'html.parser')
 
         links = []
         for link in soup.find_all('a'):
