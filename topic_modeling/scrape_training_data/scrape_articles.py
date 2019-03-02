@@ -52,9 +52,10 @@ def test_simple_get():
 def test_log_error():
     assert log_error('This is a sentence') == print('This is a sentence')
 
+
 # temporarily changing to see if Travis will work
 base_dir = os.path.join(os.getcwd(), 'topic_modeling',
-    'scrape_training_data')
+        'scrape_training_data')
 
 # make directory to hold articles
 article_directory = os.path.join(base_dir, 'the_dartmouth')
