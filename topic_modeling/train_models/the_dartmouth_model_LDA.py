@@ -3,6 +3,7 @@ import glob
 import re
 import nltk
 import string
+import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction import text
@@ -14,6 +15,17 @@ from nltk.stem.wordnet import WordNetLemmatizer
 nltk.download("stopwords")
 nltk.download("wordnet")
 
+stop = set(stopwords.words('english'))
+exclude = set(string.punctuation)
+lemma = WordNetLemmatizer()
+
+# General TODO
+# 1. Turn this into a function with parameters to
+# enter on the command line
+# 2. Store pickles and top words with reasonable
+# naming convention
+# 3. Use a sample text file for testing
+
 
 def clean(document):
     stop_free = " ".join(
@@ -23,8 +35,9 @@ def clean(document):
     return normalized
 
 
-def print_top_words(model, feature_names, n_top_words, output_dir):
-    myfile = open(os.path.join(output_dir, 'topics.txt'), 'w')
+def print_top_words(model, feature_names, n_top_words, num_topics, output_dir):
+    myfile = open(os.path.join(
+            output_dir, 'LDA_dartmouth_topic{0}'.format(num_topics)), 'w')
     for topic_idx, topic in enumerate(model.components_):
             message = "Topic #{}: ".format(topic_idx)
             message += " ".join(
@@ -33,10 +46,6 @@ def print_top_words(model, feature_names, n_top_words, output_dir):
             myfile.write("{}\n".format(message))
     myfile.close()
 
-
-# Will want options for different preprocessing steps
-# Make this as modular as possible
-# Figure out how to save the models as pickle and name them
 
 # need two different ways to set directory to pass
 # Travis CI (because .travis file is called from
@@ -54,29 +63,29 @@ else:
     data_dir = os.path.join(
         os.getcwd(), 'topic_modeling', 'scrape_training_data')
 
-# Put all text from articles into one file
-stop = set(stopwords.words('english'))
-exclude = set(string.punctuation)
-lemma = WordNetLemmatizer()
+# Put all text from articles into one file,
+# if not already
+if not os.path.exists("all_articles.txt"):
 
-flist = glob.glob(os.path.join(data_dir, 'the_dartmouth', '*.txt'))
+    flist = glob.glob(os.path.join(data_dir, 'the_dartmouth', '*.txt'))
 
-data_samples = []
+    data_samples = []
 
-for file in flist:
+    for file in flist:
 
-    if os.stat(file).st_size != 0:
+        if os.stat(file).st_size != 0:
 
-        file_text = open(file)
-        text_1 = file_text.read()
+            file_text = open(file)
+            text_1 = file_text.read()
 
-        data_samples.append(text_1)
+            data_samples.append(text_1)
 
-        file_text.close()
+            file_text.close()
 
-file = open('all_articles.txt', 'w')
-for data_sample in data_samples:
-    file.write("{}\n".format(data_sample))
+    file = open('all_articles.txt', 'w')
+    for data_sample in data_samples:
+        file.write("{}\n".format(data_sample))
+    file.close()
 
 
 data_samples_full = [line.rstrip('\n') for line in open('all_articles.txt')]
@@ -113,7 +122,6 @@ num_top_words = 20
 
 for n_component in n_components:
 
-    # Use tf (raw term count) features for LDA.
     tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2,
                                     max_features=None,
                                     stop_words=stop_words)
@@ -126,10 +134,19 @@ for n_component in n_components:
 
     tf_feature_names = tf_vectorizer.get_feature_names()
 
-    output_dir_LDA = os.path.join(base_dir, 'output',
-                                  'LDA_dartmouth_topic{0}'.format(n_component))
+    top_words_dir = os.path.join(base_dir, 'models_topics')
+    pickle_dir = os.path.join(base_dir, 'models_pickles')
 
-    if not os.path.exists(output_dir_LDA):
-        os.makedirs(output_dir_LDA)
+    if not os.path.exists(top_words_dir):
+        os.makedirs(top_words_dir)
 
-    print_top_words(lda, tf_feature_names, num_top_words, output_dir_LDA)
+    if not os.path.exists(pickle_dir):
+        os.makedirs(pickle_dir)
+
+    print_top_words(
+        lda, tf_feature_names, num_top_words, n_component, top_words_dir)
+
+    pickle_filename = 'LDA_dartmouth_topic{0}.pkl'.format(n_component)
+    with open(os.path.join(pickle_dir, pickle_filename), 'wb') as file:
+        pickle.dump(lda, file)
+    file.close()
