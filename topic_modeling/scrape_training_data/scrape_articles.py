@@ -89,7 +89,7 @@ for link in links:
 
         with open(os.path.join(
                     base_dir, 'the_dartmouth', '{0}.txt'.format(title[:199])),
-                    "wb") as text_file:
+                "wb") as text_file:
             text_file.write(s.encode('utf8'))
 
         # Pause the loop
