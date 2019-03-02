@@ -1,11 +1,10 @@
 language: python
 
 python:
-  - "3.5"
   - "3.6"
 
 install:
-  - pip install codecov flake8 pytest pytest-cov
+  - pip install codecov flake8 pytest pytest-cov bs4
 
 script:
   - flake8 topic_modeling/scrape_training_data/*.py
