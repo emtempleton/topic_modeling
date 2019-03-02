@@ -54,8 +54,8 @@ def test_log_error():
 
 
 # temporarily changing to see if Travis will work
-base_dir = os.path.join(os.getcwd(), 'topic_modeling',
-        'scrape_training_data')
+base_dir = os.path.join(
+            os.getcwd(), 'topic_modeling', 'scrape_training_data')
 
 # make directory to hold articles
 article_directory = os.path.join(base_dir, 'the_dartmouth')
@@ -87,8 +87,9 @@ for link in links:
         s = ' '.join(paragraphs)
         s = s.split('\n', 1)[0]
 
-        with open(os.path.join(base_dir, 'the_dartmouth',
-                    '{0}.txt'.format(title[:199])), "wb") as text_file:
+        with open(os.path.join(
+                    base_dir, 'the_dartmouth', '{0}.txt'.format(title[:199])),
+                    "wb") as text_file:
             text_file.write(s.encode('utf8'))
 
         # Pause the loop
