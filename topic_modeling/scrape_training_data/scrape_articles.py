@@ -52,9 +52,9 @@ def test_simple_get():
 def test_log_error():
     assert log_error('This is a sentence') == print('This is a sentence')
 
-
-#base_dir = os.getcwd()
-base_dir = '/Users/emma/Dropbox/topic_modeling/topic_modeling/scrape_training_data'
+# temporarily changing to see if Travis will work
+base_dir = os.path.join(os.getcwd(), 'topic_modeling',
+    'scrape_training_data')
 
 # make directory to hold articles
 article_directory = os.path.join(base_dir, 'the_dartmouth')
@@ -87,8 +87,8 @@ for link in links:
         s = s.split('\n', 1)[0]
 
         with open(os.path.join(base_dir, 'the_dartmouth',
-                '{0}.txt'.format(title[:199])), "wb") as text_file:
-                text_file.write(s.encode('utf8'))
+                    '{0}.txt'.format(title[:199])), "wb") as text_file:
+            text_file.write(s.encode('utf8'))
 
         # Pause the loop
         sleep(randint(8, 15))
