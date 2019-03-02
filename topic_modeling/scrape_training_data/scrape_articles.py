@@ -53,8 +53,15 @@ def test_log_error():
     assert log_error('This is a sentence') == print('This is a sentence')
 
 
-# temporarily changing to see if Travis will work
-base_dir = os.path.join(
+# need two different ways to set directory to pass
+# Travis CI (because .travis file is called from
+# different directory)
+current_file = os.getcwd().split('/')[-1]
+
+if current_file == 'scrape_training_data':
+    base_dir = os.getcwd()
+else:
+    base_dir = os.path.join(
             os.getcwd(), 'topic_modeling', 'scrape_training_data')
 
 # make directory to hold articles
