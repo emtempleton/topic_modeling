@@ -85,20 +85,10 @@ for link in links:
         s = ' '.join(paragraphs)
         s = s.split('\n', 1)[0]
 
-        if len(title) > 200:
-
-            short_title = title[0:199]
-
-            with open(os.path.join(
-                base_dir, 'the_dartmouth', '{0}.txt'.format(short_title)),
-                    "wb") as text_file:
-                    text_file.write(s.encode('utf8'))
-        else:
-
-            with open(os.path.join(
-                base_dir, 'the_dartmouth', '{0}.txt'.format(title)),
-                    "wb") as text_file:
-                    text_file.write(s.encode('utf8'))
+        with open(os.path.join(
+            base_dir, 'the_dartmouth', '{0}.txt'.format(title[:199])),
+                "wb") as text_file:
+                text_file.write(s.encode('utf8'))
 
         # Pause the loop
         sleep(randint(8, 15))
