@@ -50,7 +50,7 @@ def test_simple_get():
 
 
 def test_log_error():
-    assert log_error('This is a test') == print('This is a test')
+    assert log_error('This is a sentence') == print('This is a sentence')
 
 
 base_dir = os.getcwd()
