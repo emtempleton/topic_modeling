@@ -22,17 +22,7 @@ lemma = WordNetLemmatizer()
 # General TODO
 # 1. Turn this into a function with parameters to
 # enter on the command line
-# 2. Store pickles and top words with reasonable
-# naming convention
-# 3. Use a sample text file for testing
-
-
-def clean(document):
-    stop_free = " ".join(
-        [i for i in document.lower().split() if i not in stop])
-    punc_free = ''.join(ch for ch in stop_free if ch not in exclude)
-    normalized = " ".join(lemma.lemmatize(word) for word in punc_free.split())
-    return normalized
+# 2. Use a sample text file for testing
 
 
 def print_top_words(model, feature_names, n_top_words, num_topics, output_dir):
@@ -69,7 +59,7 @@ if not os.path.exists("all_articles.txt"):
 
     flist = glob.glob(os.path.join(data_dir, 'the_dartmouth', '*.txt'))
 
-    data_samples = []
+    all_articles = []
 
     for file in flist:
 
@@ -78,25 +68,24 @@ if not os.path.exists("all_articles.txt"):
             file_text = open(file)
             text_1 = file_text.read()
 
-            data_samples.append(text_1)
+            all_articles.append(text_1)
 
             file_text.close()
 
     file = open('all_articles.txt', 'w')
-    for data_sample in data_samples:
-        file.write("{}\n".format(data_sample))
+    for article in all_articles:
+        file.write("{}\n".format(article))
     file.close()
 
 
-data_samples_full = [line.rstrip('\n') for line in open('all_articles.txt')]
+all_articles_original = [line.rstrip('\n') for line in open(
+                        'all_articles.txt')]
 
 porter = PorterStemmer()
 
-data_samples_clean = [clean(doc).split() for doc in data_samples_full]
+all_articles_preprocessed = []
 
-data_samples = []
-
-for doc in data_samples_full:
+for doc in all_articles_original:
     s = doc.lower()
     s = re.sub(r'([^\s\w]|_)+', ' ', s)
     s = re.sub(r'\s+', ' ', s)  # gets rid of tabs
@@ -107,7 +96,7 @@ for doc in data_samples_full:
     stemmed = [porter.stem(word) for word in tokens]
     s = " ".join(stemmed)
 
-    data_samples.append(s)
+    all_articles_preprocessed.append(s)
 
 my_additional_stop_words = [
     've', 'll', 'd', 'm', 'o', 're', 'y', 'said',
@@ -125,7 +114,7 @@ for n_component in n_components:
     tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2,
                                     max_features=None,
                                     stop_words=stop_words)
-    tf = tf_vectorizer.fit_transform(data_samples)
+    tf = tf_vectorizer.fit_transform(all_articles_preprocessed)
 
     lda = LatentDirichletAllocation(n_topics=n_component, max_iter=20,
                                     learning_method='online',
