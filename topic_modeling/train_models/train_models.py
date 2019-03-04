@@ -4,7 +4,6 @@ import glob
 import re
 import nltk
 import string
-import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction import text
@@ -19,12 +18,6 @@ nltk.download("wordnet")
 stop = set(stopwords.words('english'))
 exclude = set(string.punctuation)
 lemma = WordNetLemmatizer()
-
-# General TODO
-# 1. Turn this into a function with parameters to
-# enter on the command line
-# 2. Use a sample text file for testing
-# 3. make sure output sensible when stemming is False
 
 
 def print_top_words(model, feature_names, num_topics,
@@ -51,6 +44,14 @@ def preprocess_documents(doc, stemming=True):
         stemmed = [porter.stem(word) for word in tokens]
         s = " ".join(stemmed)
     return s
+
+
+def test_preprocess_documents():
+    assert preprocess_documents(
+            'Clean THIS up.,!@ stemming') == 'clean thi up stem'
+    assert preprocess_documents(
+            'Clean THIS up.,!@ stemming',
+            stemming=False) == 'clean this up stemming'
 
 
 # will want an optional parameter for the documents.
@@ -92,10 +93,10 @@ def train_models(topics):
 
                 file_text.close()
 
-        file = open('all_articles.txt', 'w')
+        article_file = open('all_articles.txt', 'w')
         for article in all_articles:
-            file.write("{}\n".format(article))
-        file.close()
+            article_file.write("{}\n".format(article))
+        article_file.close()
 
     all_articles_original = [line.rstrip('\n') for line in open(
                             'all_articles.txt')]
@@ -137,9 +138,9 @@ def train_models(topics):
             lda, tf_feature_names, n_component, top_words_dir)
 
         pickle_filename = 'LDA_dartmouth_topic{0}.pkl'.format(n_component)
-        with open(os.path.join(pickle_dir, pickle_filename), 'wb') as file:
-            pickle.dump(lda, file)
-        file.close()
+        with open(os.path.join(
+                    pickle_dir, pickle_filename), 'wb') as pickle_file:
+            pickle_file.dump(lda, pickle_file)
 
 
 if __name__ == '__main__':

@@ -9,6 +9,8 @@ install:
 script:
   - flake8 topic_modeling/scrape_training_data/*.py
   - pytest topic_modeling/scrape_training_data/*.py
+  - flake8 topic_modeling/train_models/*.py
+  - pytest topic_modeling/train_models/*.py
 
 after_success:
   - codecov
