@@ -4,7 +4,7 @@ python:
   - "3.6"
 
 install:
-  - pip install codecov flake8 pytest bs4 ipython pandas
+  - pip install codecov flake8 pytest bs4 ipython pandas nltk sklearn
 
 script:
   - flake8 topic_modeling/scrape_training_data/*.py

@@ -25,11 +25,11 @@ def print_top_words(model, feature_names, num_topics,
     myfile = open(os.path.join(
             output_dir, 'LDA_dartmouth_topic{0}'.format(num_topics)), 'w')
     for topic_idx, topic in enumerate(model.components_):
-            message = "Topic #{}: ".format(topic_idx)
-            message += " ".join(
-                [feature_names[i]
-                    for i in topic.argsort()[:-n_top_words - 1:-1]])
-            myfile.write("{}\n".format(message))
+        message = "Topic #{}: ".format(topic_idx)
+        message += " ".join(
+            [feature_names[i]
+                for i in topic.argsort()[:-n_top_words - 1:-1]])
+        myfile.write("{}\n".format(message))
     myfile.close()
 
 
