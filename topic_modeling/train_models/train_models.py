@@ -40,9 +40,22 @@ def print_top_words(model, feature_names, num_topics,
     myfile.close()
 
 
+def preprocess_documents(doc, stemming=True):
+    porter = PorterStemmer()
+    s = doc.lower()
+    s = re.sub(r'([^\s\w]|_)+', ' ', s)
+    s = re.sub(r'\s+', ' ', s)  # gets rid of tabs
+    s = re.sub(r'[^A-Za-z0-9]+', ' ', s)
+    tokens = word_tokenize(s)
+    if stemming:
+        stemmed = [porter.stem(word) for word in tokens]
+        s = " ".join(stemmed)
+    return s
+
+
 # will want an optional parameter for the documents.
 # can set it here
-def train_models(topics, stemming=True):
+def train_models(topics):
 
     # need two different ways to set directory to pass
     # Travis CI (because .travis file is called from
@@ -87,22 +100,10 @@ def train_models(topics, stemming=True):
     all_articles_original = [line.rstrip('\n') for line in open(
                             'all_articles.txt')]
 
-    porter = PorterStemmer()
-
     all_articles_preprocessed = []
 
     for doc in all_articles_original:
-        s = doc.lower()
-        s = re.sub(r'([^\s\w]|_)+', ' ', s)
-        s = re.sub(r'\s+', ' ', s)  # gets rid of tabs
-        s = re.sub(r'[^A-Za-z0-9]+', ' ', s)
-
-        tokens = word_tokenize(s)
-        if stemming:
-            stemmed = [porter.stem(word) for word in tokens]
-            s = " ".join(stemmed)
-
-        all_articles_preprocessed.append(s)
+        all_articles_preprocessed.append(preprocess_documents(doc))
 
     my_additional_stop_words = [
         've', 'll', 'd', 'm', 'o', 're', 'y', 'said',
