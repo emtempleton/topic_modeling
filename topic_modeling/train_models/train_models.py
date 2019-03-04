@@ -14,6 +14,7 @@ from nltk.stem.wordnet import WordNetLemmatizer
 
 nltk.download("stopwords")
 nltk.download("wordnet")
+nltk.download("punkt")
 
 stop = set(stopwords.words('english'))
 exclude = set(string.punctuation)
