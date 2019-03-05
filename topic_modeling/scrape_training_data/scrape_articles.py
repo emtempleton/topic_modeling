@@ -50,10 +50,19 @@ def test_simple_get():
 
 
 def test_log_error():
-    assert log_error('This is a test') == print('This is a test')
+    assert log_error('This is a sentence') == print('This is a sentence')
 
 
-base_dir = os.getcwd()
+# need two different ways to set directory to pass
+# Travis CI (because .travis file is called from
+# different directory)
+current_file = os.getcwd().split('/')[-1]
+
+if current_file == 'scrape_training_data':
+    base_dir = os.getcwd()
+else:
+    base_dir = os.path.join(
+            os.getcwd(), 'topic_modeling', 'scrape_training_data')
 
 # make directory to hold articles
 article_directory = os.path.join(base_dir, 'the_dartmouth')
@@ -85,20 +94,11 @@ for link in links:
         s = ' '.join(paragraphs)
         s = s.split('\n', 1)[0]
 
-        if len(title) > 200:
-
-            short_title = title[0:199]
-
-            with open(os.path.join(
-                base_dir, 'the_dartmouth', '{0}.txt'.format(short_title)),
-                    "wb") as text_file:
-                    text_file.write(s.encode('utf8'))
-        else:
-
-            with open(os.path.join(
-                base_dir, 'the_dartmouth', '{0}.txt'.format(title)),
-                    "wb") as text_file:
-                    text_file.write(s.encode('utf8'))
+        with open(
+                os.path.join(
+                    base_dir, 'the_dartmouth', '{0}.txt'.format(title[:199])
+                    ), "wb") as text_file:
+            text_file.write(s.encode('utf8'))
 
         # Pause the loop
         sleep(randint(8, 15))
