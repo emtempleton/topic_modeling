@@ -4,6 +4,7 @@ import glob
 import re
 import nltk
 import string
+import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction import text
@@ -22,9 +23,10 @@ lemma = WordNetLemmatizer()
 
 
 def print_top_words(model, feature_names, num_topics,
-                    output_dir, n_top_words=20):
+                    output_dir, stemming_info, n_top_words=20):
     myfile = open(os.path.join(
-            output_dir, 'LDA_dartmouth_topic{0}'.format(num_topics)), 'w')
+            output_dir, '{0}_topics_{1}'.format(
+                num_topics, stemming_info)), 'w')
     for topic_idx, topic in enumerate(model.components_):
         message = "Topic #{}: ".format(topic_idx)
         message += " ".join(
@@ -55,9 +57,17 @@ def test_preprocess_documents():
             stemming=False) == 'clean this up stemming'
 
 
+def flag_stemming(stemming=True):
+    if stemming:
+        stemming_info = 'with_stemming'
+    else:
+        stemming_info = 'without_stemming'
+    return stemming_info
+
+
 # will want an optional parameter for the documents.
 # can set it here
-def train_models(topics):
+def train_models(topics, stemming=True):
 
     # need two different ways to set directory to pass
     # Travis CI (because .travis file is called from
@@ -135,14 +145,22 @@ def train_models(topics):
         if not os.path.exists(pickle_dir):
             os.makedirs(pickle_dir)
 
-        print_top_words(
-            lda, tf_feature_names, n_component, top_words_dir)
+        stemming_info = flag_stemming()
 
-        pickle_filename = 'LDA_dartmouth_topic{0}.pkl'.format(n_component)
+        print_top_words(
+            lda, tf_feature_names, n_component, top_words_dir, stemming_info)
+
+        pickle_filename = '{0}_topics_{1}.pkl'.format(
+                            n_component, stemming_info)
         with open(os.path.join(
                     pickle_dir, pickle_filename), 'wb') as pickle_file:
-            pickle_file.dump(lda, pickle_file)
+            pickle.dump(lda, pickle_file)
 
 
 if __name__ == '__main__':
     topics = [int(sys.argv[1])]
+    train_models(topics)
+# having trouble thinking through
+# how to pass 'False' for stemming
+# if I want to give an optional argument
+# to a different function
