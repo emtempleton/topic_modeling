@@ -58,11 +58,7 @@ def test_preprocess_documents():
 
 
 def flag_stemming(stemming=True):
-    if stemming:
-        stemming_info = 'with_stemming'
-    else:
-        stemming_info = 'without_stemming'
-    return stemming_info
+    return '{}_stemming'.format(('without', 'with')[stemming])
 
 
 # will want an optional parameter for the documents.
@@ -93,24 +89,20 @@ def train_models(topics, stemming=True):
 
         all_articles = []
 
-        for file in flist:
+        for filename in flist:
 
-            if os.stat(file).st_size != 0:
+            if os.stat(filename).st_size != 0:
 
-                file_text = open(file)
-                text_1 = file_text.read()
+                with open(filename) as file_text:
+                    all_articles.append(file_text.read())
 
-                all_articles.append(text_1)
-
-                file_text.close()
-
-        article_file = open('all_articles.txt', 'w')
-        for article in all_articles:
-            article_file.write("{}\n".format(article))
-        article_file.close()
+        with open('all_articles.txt', 'w') as article_file:
+            article_file.write("\n".join(all_articles))
 
     all_articles_original = [line.rstrip('\n') for line in open(
                             'all_articles.txt')]
+
+    #'all_articles.txt'.close()
 
     all_articles_preprocessed = []
 
@@ -155,6 +147,12 @@ def train_models(topics, stemming=True):
         with open(os.path.join(
                     pickle_dir, pickle_filename), 'wb') as pickle_file:
             pickle.dump(lda, pickle_file)
+
+        tf_vectorizer_filename = '{0}_topics_{1}_tf.pkl'.format(
+            n_component, stemming_info)
+        with open(os.path.join(
+                pickle_dir, tf_vectorizer_filename), 'wb') as pickle_file_tf:
+            pickle.dump(tf_vectorizer, pickle_file_tf)
 
 
 if __name__ == '__main__':
