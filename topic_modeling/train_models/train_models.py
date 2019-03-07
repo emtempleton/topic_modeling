@@ -99,10 +99,8 @@ def train_models(topics, stemming=True):
         with open('all_articles.txt', 'w') as article_file:
             article_file.write("\n".join(all_articles))
 
-    all_articles_original = [line.rstrip('\n') for line in open(
-                            'all_articles.txt')]
-
-    #'all_articles.txt'.close()
+    with open('all_articles.txt') as original_text:
+        all_articles_original = [line.rstrip('\n') for line in original_text]
 
     all_articles_preprocessed = []
 
