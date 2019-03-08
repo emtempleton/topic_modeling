@@ -105,7 +105,8 @@ def train_models(topics, stemming):
     all_articles_preprocessed = []
 
     for doc in all_articles_original:
-        all_articles_preprocessed.append(preprocess_documents(doc, stemming=stemming))
+        all_articles_preprocessed.append(
+            preprocess_documents(doc, stemming=stemming))
 
     my_additional_stop_words = [
         've', 'll', 'd', 'm', 'o', 're', 'y', 'said',

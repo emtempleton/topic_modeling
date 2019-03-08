@@ -53,7 +53,8 @@ def apply_topic_models():
         with open(topic_model, 'rb') as pickle_file:
             model = pickle.load(pickle_file)
 
-        with open(os.path.join(model_dir, model_tf_name), 'rb') as pickle_file_tf:
+        with open(os.path.join(
+                model_dir, model_tf_name), 'rb') as pickle_file_tf:
             tf_vectorizer = pickle.load(pickle_file_tf)
 
         flist = glob.glob(os.path.join(base_dir, 'validation_data', '*.txt'))
@@ -73,11 +74,13 @@ def apply_topic_models():
             topics.append(topic)
 
             # start with first element
-            topic_matrix = model.transform(tf_vectorizer.transform([one_convo[0]]))
+            topic_matrix = model.transform(
+                            tf_vectorizer.transform([one_convo[0]]))
             topic_matrix = pd.DataFrame(topic_matrix)
 
             for turn in one_convo[1:]:  # skip first one
-                topic_weights = model.transform(tf_vectorizer.transform([turn]))
+                topic_weights = model.transform(
+                                tf_vectorizer.transform([turn]))
                 topic_weights = pd.DataFrame(topic_weights)
                 topic_matrix = topic_matrix.append(topic_weights,
                                                    ignore_index=True)
@@ -96,13 +99,24 @@ def apply_topic_models():
 
 
 def flatten_topic_vectors(base_dir):
-    model_list = glob.glob(os.path.join(base_dir,'topic_vectors','*.csv'))
+    model_list = glob.glob(os.path.join(base_dir, 'topic_vectors', '*.csv'))
 
     for model in model_list:
 
         data = pd.read_csv(model)
         name = model.split('/')[-1].split('.csv')[0]
-        new_header = ['computer_science_1','computer_science_2','computer_science_3','computer_science_4','football_1','football_2','football_3','football_4','fraternities_and_sororities_1','fraternities_and_sororities_2','fraternities_and_sororities_3','fraternities_and_sororities_4','neuroscience_1','neuroscience_2','neuroscience_3','neuroscience_4','religion_1','religion_2','religion_3','religion_4','theatre_1','theatre_2','theatre_3','theatre_4']
+        new_header = [
+                        'computer_science_1', 'computer_science_2',
+                        'computer_science_3', 'computer_science_4',
+                        'football_1', 'football_2', 'football_3',
+                        'football_4', 'fraternities_and_sororities_1',
+                        'fraternities_and_sororities_2',
+                        'fraternities_and_sororities_3',
+                        'fraternities_and_sororities_4', 'neuroscience_1',
+                        'neuroscience_2', 'neuroscience_3', 'neuroscience_4',
+                        'religion_1', 'religion_2', 'religion_3', 'religion_4',
+                        'theatre_1', 'theatre_2', 'theatre_3', 'theatre_4'
+                        ]
 
         data = data.sort_values(by=['topic'])
         data.pop('Unnamed: 0')
@@ -111,7 +125,7 @@ def flatten_topic_vectors(base_dir):
         topics_transpose = data.transpose()
         topics_transpose.columns = new_header
 
-        corr_matrix=topics_transpose.corr()
+        corr_matrix = topics_transpose.corr()
         data_flat = corr_matrix.values.flatten()
 
         topic_vector_flat_dir = os.path.join(base_dir, 'topic_vectors_flat')
@@ -119,14 +133,16 @@ def flatten_topic_vectors(base_dir):
         if not os.path.exists(topic_vector_flat_dir):
             os.makedirs(topic_vector_flat_dir)
 
-        np.save(os.path.join(topic_vector_flat_dir, '{0}').format(name), data_flat)
+        np.save(os.path.join(
+            topic_vector_flat_dir, '{0}').format(name), data_flat)
 
 
 # Compare to an 'ideal' version
 # Probably a better way to generate the ideal version in the first place
 
 def compare_to_perfect_model_performance(base_dir):
-    perfect_model = pd.read_csv(os.path.join(base_dir, 'perfect_model.csv'), header=None)
+    perfect_model = pd.read_csv(os.path.join(base_dir, 'perfect_model.csv'),
+                                header=None)
     perfect_model = perfect_model.values.flatten()
 
     flist = glob.glob(os.path.join(base_dir, 'topic_vectors_flat', '*.npy'))
@@ -153,8 +169,9 @@ def compare_to_perfect_model_performance(base_dir):
 
 def plot_model_comparisions(evaluate_wiki):
     plt.style.use('seaborn-white')
-    plt.figure(figsize=(20,10))
-    plt.bar(evaluate_wiki['model'], evaluate_wiki['correlation'], color='mediumblue')
+    plt.figure(figsize=(20, 10))
+    plt.bar(evaluate_wiki['model'], evaluate_wiki['correlation'],
+            color='mediumblue')
     plt.margins(x=0.005)
     plt.xticks(rotation='vertical', fontsize=15)
     plt.yticks(fontsize=15)
@@ -163,11 +180,11 @@ def plot_model_comparisions(evaluate_wiki):
     plt.grid(axis='y')
 
     axes = plt.gca()
-    axes.set_ylim([0,1])
+    axes.set_ylim([0, 1])
 
     plt.tight_layout()
     plt.savefig('model_evaluation.png', edgecolor='none', dpi=300)
-    
+
 
 if __name__ == '__main__':
     base_dir = apply_topic_models()
@@ -175,12 +192,3 @@ if __name__ == '__main__':
     compare_to_perfect_model_performance(base_dir)
     performance_df = compare_to_perfect_model_performance(base_dir)
     plot_model_comparisions(performance_df)
-
-
-# TODO
-# 1. make functions work together (give parameters that they need to run)
-# 2. run from command line by adding __main__
-# 3. train many different models in train_models.py (need to figure out argparsing)
-# 4. worst case, solve by how i solved the nbackseq
-# 5. look into np.eye for creating the perfect model (and array creation routines)
-# 6. To start, just put all paramters in the bottom of the script and don't worry about arg parsing yet

@@ -97,13 +97,13 @@ def scrape_articles():
 
             with open(
                     os.path.join(
-                        base_dir, 'training_data', '{0}.txt'.format(title[:199])
+                        base_dir, 'training_data',
+                        '{0}.txt'.format(title[:199])
                         ), "wb") as text_file:
                 text_file.write(s.encode('utf8'))
 
             # Pause the loop
             sleep(randint(8, 15))
-
 
 
 if __name__ == '__main__':

@@ -5,6 +5,7 @@ from random import randint
 from IPython.core.display import clear_output
 from time import time
 
+
 def get_article_links():
 
     # change range to 0,50 when using cluster
@@ -48,7 +49,6 @@ def get_article_links():
                 if link not in article_links:
                     if 'article' in link.split('/'):
                         article_links.append(link)
-
 
     file = open('article_links.txt', 'w')
     for article_link in article_links:
