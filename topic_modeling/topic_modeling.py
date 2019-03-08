@@ -9,8 +9,6 @@ else:
     base_dir = os.path.join(
             os.getcwd(), 'topic_modeling')
 
-base_dir = os.getcwd()
-
 os.chdir(os.path.join(base_dir, 'scrape_training_data'))
 subprocess.call(["python", "get_article_links.py"])
 subprocess.call(["python", "scrape_articles.py"])
