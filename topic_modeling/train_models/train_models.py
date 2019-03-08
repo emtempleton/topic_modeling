@@ -1,5 +1,4 @@
 import os
-import sys
 import glob
 import re
 import nltk
@@ -25,7 +24,7 @@ lemma = WordNetLemmatizer()
 def print_top_words(model, feature_names, num_topics,
                     output_dir, stemming_info, n_top_words=20):
     myfile = open(os.path.join(
-            output_dir, '{0}_topics_{1}'.format(
+            output_dir, '{0}_topics_{1}.txt'.format(
                 num_topics, stemming_info)), 'w')
     for topic_idx, topic in enumerate(model.components_):
         message = "Topic #{}: ".format(topic_idx)
@@ -36,7 +35,7 @@ def print_top_words(model, feature_names, num_topics,
     myfile.close()
 
 
-def preprocess_documents(doc, stemming=True):
+def preprocess_documents(doc, stemming):
     porter = PorterStemmer()
     s = doc.lower()
     s = re.sub(r'([^\s\w]|_)+', ' ', s)
@@ -51,19 +50,20 @@ def preprocess_documents(doc, stemming=True):
 
 def test_preprocess_documents():
     assert preprocess_documents(
-            'Clean THIS up.,!@ stemming') == 'clean thi up stem'
+            'Clean THIS up.,!@ stemming',
+            stemming=True) == 'clean thi up stem'
     assert preprocess_documents(
             'Clean THIS up.,!@ stemming',
             stemming=False) == 'clean this up stemming'
 
 
-def flag_stemming(stemming=True):
+def flag_stemming(stemming):
     return '{}_stemming'.format(('without', 'with')[stemming])
 
 
 # will want an optional parameter for the documents.
 # can set it here
-def train_models(topics, stemming=True):
+def train_models(topics, stemming):
 
     # need two different ways to set directory to pass
     # Travis CI (because .travis file is called from
@@ -85,7 +85,7 @@ def train_models(topics, stemming=True):
     # if not already
     if not os.path.exists("all_articles.txt"):
 
-        flist = glob.glob(os.path.join(data_dir, 'the_dartmouth', '*.txt'))
+        flist = glob.glob(os.path.join(data_dir, 'training_data', '*.txt'))
 
         all_articles = []
 
@@ -105,7 +105,7 @@ def train_models(topics, stemming=True):
     all_articles_preprocessed = []
 
     for doc in all_articles_original:
-        all_articles_preprocessed.append(preprocess_documents(doc))
+        all_articles_preprocessed.append(preprocess_documents(doc, stemming=stemming))
 
     my_additional_stop_words = [
         've', 'll', 'd', 'm', 'o', 're', 'y', 'said',
@@ -135,7 +135,7 @@ def train_models(topics, stemming=True):
         if not os.path.exists(pickle_dir):
             os.makedirs(pickle_dir)
 
-        stemming_info = flag_stemming()
+        stemming_info = flag_stemming(stemming)
 
         print_top_words(
             lda, tf_feature_names, n_component, top_words_dir, stemming_info)
@@ -154,9 +154,5 @@ def train_models(topics, stemming=True):
 
 
 if __name__ == '__main__':
-    topics = [int(sys.argv[1])]
-    train_models(topics)
-# having trouble thinking through
-# how to pass 'False' for stemming
-# if I want to give an optional argument
-# to a different function
+    train_models([10, 15, 20, 25], stemming=True)
+    train_models([10, 15, 20, 25], stemming=False)

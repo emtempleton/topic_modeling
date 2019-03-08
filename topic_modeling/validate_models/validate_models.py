@@ -84,11 +84,18 @@ def apply_topic_models():
 
         topic_matrix['topic'] = topics
 
-        topic_matrix.to_csv(os.path.join(base_dir, 'topic_vectors',
+        topic_vector_dir = os.path.join(base_dir, 'topic_vectors')
+
+        if not os.path.exists(topic_vector_dir):
+            os.makedirs(topic_vector_dir)
+
+        topic_matrix.to_csv(os.path.join(topic_vector_dir,
                                          '{0}.csv'.format(model_name)))
 
+    return base_dir
 
-def flatten_topic_vectors():
+
+def flatten_topic_vectors(base_dir):
     model_list = glob.glob(os.path.join(base_dir,'topic_vectors','*.csv'))
 
     for model in model_list:
@@ -105,15 +112,20 @@ def flatten_topic_vectors():
         topics_transpose.columns = new_header
 
         corr_matrix=topics_transpose.corr()
-
         data_flat = corr_matrix.values.flatten()
-        np.save(os.path.join(base_dir, 'topic_vectors_flat', '{0}').format(name), data_flat)
+
+        topic_vector_flat_dir = os.path.join(base_dir, 'topic_vectors_flat')
+
+        if not os.path.exists(topic_vector_flat_dir):
+            os.makedirs(topic_vector_flat_dir)
+
+        np.save(os.path.join(topic_vector_flat_dir, '{0}').format(name), data_flat)
 
 
 # Compare to an 'ideal' version
 # Probably a better way to generate the ideal version in the first place
 
-def compare_to_perfect_model_performance():
+def compare_to_perfect_model_performance(base_dir):
     perfect_model = pd.read_csv(os.path.join(base_dir, 'perfect_model.csv'), header=None)
     perfect_model = perfect_model.values.flatten()
 
@@ -136,11 +148,13 @@ def compare_to_perfect_model_performance():
 
         counter = counter + 1
 
+    return evaluate_wiki
 
-def plot_model_comparisions():
+
+def plot_model_comparisions(evaluate_wiki):
     plt.style.use('seaborn-white')
     plt.figure(figsize=(20,10))
-    plt.bar(evaluate_wiki['model'],evaluate_wiki['correlation'])
+    plt.bar(evaluate_wiki['model'], evaluate_wiki['correlation'], color='mediumblue')
     plt.margins(x=0.005)
     plt.xticks(rotation='vertical', fontsize=15)
     plt.yticks(fontsize=15)
@@ -153,6 +167,14 @@ def plot_model_comparisions():
 
     plt.tight_layout()
     plt.savefig('model_evaluation.png', edgecolor='none', dpi=300)
+    
+
+if __name__ == '__main__':
+    base_dir = apply_topic_models()
+    flatten_topic_vectors(base_dir)
+    compare_to_perfect_model_performance(base_dir)
+    performance_df = compare_to_perfect_model_performance(base_dir)
+    plot_model_comparisions(performance_df)
 
 
 # TODO
@@ -160,4 +182,5 @@ def plot_model_comparisions():
 # 2. run from command line by adding __main__
 # 3. train many different models in train_models.py (need to figure out argparsing)
 # 4. worst case, solve by how i solved the nbackseq
-
+# 5. look into np.eye for creating the perfect model (and array creation routines)
+# 6. To start, just put all paramters in the bottom of the script and don't worry about arg parsing yet
