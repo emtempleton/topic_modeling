@@ -13,7 +13,25 @@ nltk.download('wordnet')
 nltk.download('punkt')
 
 
-def preprocess_documents(doc, stemming=True):
+def preprocess_documents(doc, stemming):
+    """Preprocesses documents by making everything lower-case and
+    removing punctuation. Stemming is optional.
+
+    Parameters
+    ----------
+    doc : string
+        String to be pre-processed
+    stemming : bool
+        If TRUE, stemming will be applied. If FALSE, stemming
+        will not be applied
+
+    Returns
+    -------
+    string
+        A new string that has been pre-processed (everything to
+        lower case, punctuation removed, stemming optional).
+
+    """
     porter = PorterStemmer()
     s = doc.lower()
     s = re.sub(r'([^\s\w]|_)+', ' ', s)
@@ -26,7 +44,53 @@ def preprocess_documents(doc, stemming=True):
     return s
 
 
-def apply_topic_models():
+def test_preprocess_documents():
+    assert preprocess_documents(
+            'Clean THIS up.,!@ stemming',
+            stemming=True) == 'clean thi up stem'
+    assert preprocess_documents(
+            'Clean THIS up.,!@ stemming',
+            stemming=False) == 'clean this up stemming'
+
+
+def flag_stemming(stemming):
+    """Indicated whether or not stemming was applied so
+    this information can be clear when naming output
+    files.
+
+    Parameters
+    ----------
+    stemming : bool
+        If TRUE, stemming was applied. If FALSE, stemming
+        was not applied
+
+    Returns
+    -------
+    string
+        If TRUE, output is 'with_stemming'.
+        If FALSE, output is 'without_stemming'.
+
+    """
+    return '{}_stemming'.format(('without', 'with')[stemming])
+
+
+def apply_topic_models(stemming):
+    """Apply pre-trained topic models to a set of validation
+    data (documents with *known* topics)
+
+    Parameters
+    ----------
+    stemming : bool
+        If TRUE, stemming will be applied during preprocessing.
+        If FALSE, stemming will not be applied during preprocessing.
+
+    Returns
+    -------
+    .csv files
+        .csv files that contain topic vectors for each validation
+        document. One .csv file for every pre-trained model.
+
+    """
     # need two different ways to set directory to pass
     # Travis CI (because .travis file is called from
     # different directory)
@@ -89,16 +153,37 @@ def apply_topic_models():
 
         topic_vector_dir = os.path.join(base_dir, 'topic_vectors')
 
+        stemming_info = flag_stemming(stemming)
+
         if not os.path.exists(topic_vector_dir):
             os.makedirs(topic_vector_dir)
 
         topic_matrix.to_csv(os.path.join(topic_vector_dir,
-                                         '{0}.csv'.format(model_name)))
+                                         '{0}_{1}.csv'.format(
+                                            model_name, stemming_info)))
 
-    return base_dir
+    return base_dir, stemming_info
 
 
-def flatten_topic_vectors(base_dir):
+def flatten_topic_vectors(base_dir, stemming):
+    """Take .csv file of topic vectors. Run all pairwise correlations.
+    Take those values and flatten them to run statistics.
+
+    Parameters
+    ----------
+    base_dir : path
+        Path to directory that contains .csv files with topic vectors
+    stemming : bool
+        If TRUE, stemming was applied during preprocessing.
+        If FALSE, stemming was not applied during preprocessing.
+
+    Returns
+    -------
+    .npy files
+        .npy files that contain all pairwise correlation values of
+        the topic vectors, flattend.
+
+    """
     model_list = glob.glob(os.path.join(base_dir, 'topic_vectors', '*.csv'))
 
     for model in model_list:
@@ -133,14 +218,35 @@ def flatten_topic_vectors(base_dir):
         if not os.path.exists(topic_vector_flat_dir):
             os.makedirs(topic_vector_flat_dir)
 
+        stemming_info = flag_stemming(stemming)
+
         np.save(os.path.join(
-            topic_vector_flat_dir, '{0}').format(name), data_flat)
+            topic_vector_flat_dir, '{0}_{1}').format(
+            name, stemming_info), data_flat)
 
 
 # Compare to an 'ideal' version
 # Probably a better way to generate the ideal version in the first place
 
 def compare_to_perfect_model_performance(base_dir):
+    """Compare model performance to an 'idealized' model
+    performance. Do this by correlating two flattened
+    correlation matrices (one from an 'idealized' model
+    and the other from one of the pre-trained models.)
+
+    Parameters
+    ----------
+    base_dir : path
+        Path to directory that contains necessary info
+
+    Returns
+    -------
+    pandas dataframe
+        pandas dataframe with two columns: 1) model name and
+        2) correlation of that model with 'idealized' model
+        performance.
+
+    """
     perfect_model = pd.read_csv(os.path.join(base_dir, 'perfect_model.csv'),
                                 header=None)
     perfect_model = perfect_model.values.flatten()
@@ -167,7 +273,32 @@ def compare_to_perfect_model_performance(base_dir):
     return evaluate_wiki
 
 
-def plot_model_comparisions(evaluate_wiki):
+def plot_model_comparisions(evaluate_wiki, stemming):
+    """Compare model performance to an 'idealized' model
+    performance. Do this by correlating two flattened
+    correlation matrices (one from an 'idealized' model
+    and the other from one of the pre-trained models.)
+
+    Parameters
+    ----------
+    evaluate_wiki : pandas dataframe
+        pandas dataframe with two columns: 1) model name and
+        2) correlation of that model with 'idealized' model
+        performance.
+    stemming : bool
+        If TRUE, stemming was applied during preprocessing.
+        If FALSE, stemming was not applied during preprocessing.
+
+    Returns
+    -------
+    .png file
+        A figure that demonstrates model performance across
+        all pre-trained models.
+
+    """
+
+    stemming_info = flag_stemming(stemming)
+
     plt.style.use('seaborn-white')
     plt.figure(figsize=(20, 10))
     plt.bar(evaluate_wiki['model'], evaluate_wiki['correlation'],
@@ -183,12 +314,21 @@ def plot_model_comparisions(evaluate_wiki):
     axes.set_ylim([0, 1])
 
     plt.tight_layout()
-    plt.savefig('model_evaluation.png', edgecolor='none', dpi=300)
+    plt.savefig('model_evaluation_{}.png'.format(
+                stemming_info), edgecolor='none', dpi=300)
 
 
 if __name__ == '__main__':
-    base_dir = apply_topic_models()
-    flatten_topic_vectors(base_dir)
+    # two versions -- one with stemming applied to the validation
+    # documents and one without stemming applied.
+    base_dir, stemming_info = apply_topic_models(stemming=True)
+    flatten_topic_vectors(base_dir, stemming_info)
     compare_to_perfect_model_performance(base_dir)
     performance_df = compare_to_perfect_model_performance(base_dir)
-    plot_model_comparisions(performance_df)
+    plot_model_comparisions(performance_df, stemming_info)
+
+    base_dir, stemming_info = apply_topic_models(stemming=False)
+    flatten_topic_vectors(base_dir, stemming_info)
+    compare_to_perfect_model_performance(base_dir)
+    performance_df = compare_to_perfect_model_performance(base_dir)
+    plot_model_comparisions(performance_df, stemming_info)

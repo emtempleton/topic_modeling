@@ -6,13 +6,35 @@ from IPython.core.display import clear_output
 from time import time
 
 
-def get_article_links():
+def get_article_links(start_year, end_year, num_pages):
+
+    """Collect and save a list of links that correspond to
+    articles from The Dartmouth daily newspaper.
+
+    Parameters
+    ----------
+    start_year : int
+        Year in the archives to start looking for articles
+    end_year : int
+        Year in the archives to stop looking for articles
+    num_pages : int
+        Number of archive pages that fit each year range to
+        inspect
+
+    Returns
+    -------
+    text file
+        A text file ('article_links.txt' that contains the
+        link to every article that appears in specificed
+        year and page range.
+
+    """
 
     # change range to 0,50 when using cluster
-    pages = list(map(str, range(4)))
+    pages = list(map(str, range(num_pages)))
 
     # change range to 2012,2019 when using cluster
-    year_urls = list(range(2015, 2016))
+    year_urls = list(range(start_year, end_year))
 
     article_links = []
 
@@ -57,4 +79,4 @@ def get_article_links():
 
 
 if __name__ == '__main__':
-    get_article_links()
+    get_article_links(start_year=2015, end_year=2016, num_pages=4)

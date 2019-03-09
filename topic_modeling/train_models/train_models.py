@@ -23,6 +23,35 @@ lemma = WordNetLemmatizer()
 
 def print_top_words(model, feature_names, num_topics,
                     output_dir, stemming_info, n_top_words=20):
+
+    """Print words that most strongly load onto each topic
+
+    Parameters
+    ----------
+    model : topic model
+        Trained topic model
+    feature_names : string
+        Words associated with each topics, derived from
+        tf_vectorizer
+    num_topics : int
+        Number of topics
+    output_dir : path (string)
+        Path to store outdir
+    stemming_info : bool
+        If TRUE, stemming was applied. If FALSE, stemming
+        was not applied
+    n_top_words: int
+        Number of words to print for each topic. Default
+        is 20.
+
+    Returns
+    -------
+    text file
+        A text file with the top words associated with each
+        topic in a given topic model.
+
+    """
+
     myfile = open(os.path.join(
             output_dir, '{0}_topics_{1}.txt'.format(
                 num_topics, stemming_info)), 'w')
@@ -36,6 +65,24 @@ def print_top_words(model, feature_names, num_topics,
 
 
 def preprocess_documents(doc, stemming):
+    """Preprocesses documents by making everything lower-case and
+    removing punctuation. Stemming is optional.
+
+    Parameters
+    ----------
+    doc : string
+        String to be pre-processed
+    stemming : bool
+        If TRUE, stemming will be applied. If FALSE, stemming
+        will not be applied
+
+    Returns
+    -------
+    string
+        A new string that has been pre-processed (everything to
+        lower case, punctuation removed, stemming optional).
+
+    """
     porter = PorterStemmer()
     s = doc.lower()
     s = re.sub(r'([^\s\w]|_)+', ' ', s)
@@ -58,12 +105,47 @@ def test_preprocess_documents():
 
 
 def flag_stemming(stemming):
+    """Indicated whether or not stemming was applied so
+    this information can be clear when naming output
+    files.
+
+    Parameters
+    ----------
+    stemming : bool
+        If TRUE, stemming was applied. If FALSE, stemming
+        was not applied
+
+    Returns
+    -------
+    string
+        If TRUE, output is 'with_stemming'.
+        If FALSE, output is 'without_stemming'.
+
+    """
     return '{}_stemming'.format(('without', 'with')[stemming])
 
 
-# will want an optional parameter for the documents.
-# can set it here
 def train_models(topics, stemming):
+    """Trains and stores LDA topic models using Scikit Learn
+
+    Parameters
+    ----------
+    topics : list
+        List that indicates different numbers of topics to try.
+        A different model will be trained / saved for each of
+        these values.
+
+    stemming : bool
+        If TRUE, stemming will be applied during preprocessing.
+        If FALSE, stemming will not be applied during preprocessing.
+
+    Returns
+    -------
+    Pickled, trained topic models
+        The number of trained topic models will equal the length
+        of the list set for the 'topics' parameter.
+
+    """
 
     # need two different ways to set directory to pass
     # Travis CI (because .travis file is called from
@@ -155,5 +237,7 @@ def train_models(topics, stemming):
 
 
 if __name__ == '__main__':
+    # two versions -- one with stemming applied to the training
+    # documents and one without stemming applied.
     train_models([10, 15, 20, 25], stemming=True)
     train_models([10, 15, 20, 25], stemming=False)

@@ -14,7 +14,6 @@ script:
   - flake8 topic_modeling/validate_models/*.py
   - pytest topic_modeling/validate_models/*.py
   - flake8 topic_modeling/*.py
-  - pytest topic_modeling/*.py
 
 after_success:
   - codecov
