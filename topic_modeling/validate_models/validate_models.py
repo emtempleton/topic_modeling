@@ -134,7 +134,8 @@ def apply_topic_models(stemming):
             data = pd.read_table(document)
             data.columns = ['transcript']
             one_convo.append(preprocess_documents(
-                            ",".join(data['transcript'].values)))
+                            ",".join(data['transcript'].values),
+                            stemming))
             topics.append(topic)
 
             # start with first element
@@ -151,18 +152,20 @@ def apply_topic_models(stemming):
 
         topic_matrix['topic'] = topics
 
-        topic_vector_dir = os.path.join(base_dir, 'topic_vectors')
-
         stemming_info = flag_stemming(stemming)
+
+        topic_vector_dir = os.path.join(base_dir,
+                                        'topic_vectors_{}'.format(
+                                            stemming_info))
 
         if not os.path.exists(topic_vector_dir):
             os.makedirs(topic_vector_dir)
 
         topic_matrix.to_csv(os.path.join(topic_vector_dir,
-                                         '{0}_{1}.csv'.format(
-                                            model_name, stemming_info)))
+                                         '{0}.csv'.format(
+                                            model_name)))
 
-    return base_dir, stemming_info
+    return base_dir, stemming
 
 
 def flatten_topic_vectors(base_dir, stemming):
@@ -184,7 +187,11 @@ def flatten_topic_vectors(base_dir, stemming):
         the topic vectors, flattend.
 
     """
-    model_list = glob.glob(os.path.join(base_dir, 'topic_vectors', '*.csv'))
+    stemming_info = flag_stemming(stemming)
+
+    model_list = glob.glob(os.path.join(base_dir,
+                                        'topic_vectors_{}'.format(
+                                            stemming_info), '*.csv'))
 
     for model in model_list:
 
@@ -213,16 +220,17 @@ def flatten_topic_vectors(base_dir, stemming):
         corr_matrix = topics_transpose.corr()
         data_flat = corr_matrix.values.flatten()
 
-        topic_vector_flat_dir = os.path.join(base_dir, 'topic_vectors_flat')
+        topic_vector_flat_dir = os.path.join(
+                                        base_dir,
+                                        'topic_vectors_flat_{}'.format(
+                                            stemming_info))
 
         if not os.path.exists(topic_vector_flat_dir):
             os.makedirs(topic_vector_flat_dir)
 
-        stemming_info = flag_stemming(stemming)
-
         np.save(os.path.join(
-            topic_vector_flat_dir, '{0}_{1}').format(
-            name, stemming_info), data_flat)
+            topic_vector_flat_dir, '{0}').format(
+            name), data_flat)
 
 
 # Compare to an 'ideal' version
@@ -247,11 +255,16 @@ def compare_to_perfect_model_performance(base_dir):
         performance.
 
     """
+    stemming_info = flag_stemming(stemming)
+
     perfect_model = pd.read_csv(os.path.join(base_dir, 'perfect_model.csv'),
                                 header=None)
     perfect_model = perfect_model.values.flatten()
 
-    flist = glob.glob(os.path.join(base_dir, 'topic_vectors_flat', '*.npy'))
+    flist = glob.glob(os.path.join(
+                                base_dir,
+                                'topic_vectors_flat_{}'.format(
+                                    stemming_info), '*.npy'))
 
     evaluate_wiki = pd.DataFrame()
     evaluate_wiki = evaluate_wiki.fillna(0)  # with 0s rather than NaNs
@@ -309,6 +322,9 @@ def plot_model_comparisions(evaluate_wiki, stemming):
     plt.xlabel('Model', fontsize=20)
     plt.ylabel('correlation with a perfect fit', fontsize=20)
     plt.grid(axis='y')
+    plt.title(
+        "Model Comparison (validation docuents {0} stemming applied)".format(
+            ('do not have', 'have')[stemming]), fontsize=20)
 
     axes = plt.gca()
     axes.set_ylim([0, 1])
@@ -316,19 +332,20 @@ def plot_model_comparisions(evaluate_wiki, stemming):
     plt.tight_layout()
     plt.savefig('model_evaluation_{}.png'.format(
                 stemming_info), edgecolor='none', dpi=300)
+    plt.close()
 
 
 if __name__ == '__main__':
     # two versions -- one with stemming applied to the validation
     # documents and one without stemming applied.
-    base_dir, stemming_info = apply_topic_models(stemming=True)
-    flatten_topic_vectors(base_dir, stemming_info)
+    base_dir, stemming = apply_topic_models(stemming=True)
+    flatten_topic_vectors(base_dir, stemming)
     compare_to_perfect_model_performance(base_dir)
     performance_df = compare_to_perfect_model_performance(base_dir)
-    plot_model_comparisions(performance_df, stemming_info)
+    plot_model_comparisions(performance_df, stemming)
 
-    base_dir, stemming_info = apply_topic_models(stemming=False)
-    flatten_topic_vectors(base_dir, stemming_info)
+    base_dir, stemming = apply_topic_models(stemming=False)
+    flatten_topic_vectors(base_dir, stemming)
     compare_to_perfect_model_performance(base_dir)
     performance_df = compare_to_perfect_model_performance(base_dir)
-    plot_model_comparisions(performance_df, stemming_info)
+    plot_model_comparisions(performance_df, stemming)
