@@ -1,5 +1,4 @@
 import os
-import sys
 import glob
 import re
 import nltk
@@ -24,8 +23,37 @@ lemma = WordNetLemmatizer()
 
 def print_top_words(model, feature_names, num_topics,
                     output_dir, stemming_info, n_top_words=20):
+
+    """Print words that most strongly load onto each topic
+
+    Parameters
+    ----------
+    model : topic model
+        Trained topic model
+    feature_names : string
+        Words associated with each topics, derived from
+        tf_vectorizer
+    num_topics : int
+        Number of topics
+    output_dir : path (string)
+        Path to store outdir
+    stemming_info : bool
+        If TRUE, stemming was applied. If FALSE, stemming
+        was not applied
+    n_top_words: int
+        Number of words to print for each topic. Default
+        is 20.
+
+    Returns
+    -------
+    text file
+        A text file with the top words associated with each
+        topic in a given topic model.
+
+    """
+
     myfile = open(os.path.join(
-            output_dir, '{0}_topics_{1}'.format(
+            output_dir, '{0}_topics_{1}.txt'.format(
                 num_topics, stemming_info)), 'w')
     for topic_idx, topic in enumerate(model.components_):
         message = "Topic #{}: ".format(topic_idx)
@@ -36,7 +64,25 @@ def print_top_words(model, feature_names, num_topics,
     myfile.close()
 
 
-def preprocess_documents(doc, stemming=True):
+def preprocess_documents(doc, stemming):
+    """Preprocesses documents by making everything lower-case and
+    removing punctuation. Stemming is optional.
+
+    Parameters
+    ----------
+    doc : string
+        String to be pre-processed
+    stemming : bool
+        If TRUE, stemming will be applied. If FALSE, stemming
+        will not be applied
+
+    Returns
+    -------
+    string
+        A new string that has been pre-processed (everything to
+        lower case, punctuation removed, stemming optional).
+
+    """
     porter = PorterStemmer()
     s = doc.lower()
     s = re.sub(r'([^\s\w]|_)+', ' ', s)
@@ -51,23 +97,55 @@ def preprocess_documents(doc, stemming=True):
 
 def test_preprocess_documents():
     assert preprocess_documents(
-            'Clean THIS up.,!@ stemming') == 'clean thi up stem'
+            'Clean THIS up.,!@ stemming',
+            stemming=True) == 'clean thi up stem'
     assert preprocess_documents(
             'Clean THIS up.,!@ stemming',
             stemming=False) == 'clean this up stemming'
 
 
-def flag_stemming(stemming=True):
-    if stemming:
-        stemming_info = 'with_stemming'
-    else:
-        stemming_info = 'without_stemming'
-    return stemming_info
+def flag_stemming(stemming):
+    """Indicated whether or not stemming was applied so
+    this information can be clear when naming output
+    files.
+
+    Parameters
+    ----------
+    stemming : bool
+        If TRUE, stemming was applied. If FALSE, stemming
+        was not applied
+
+    Returns
+    -------
+    string
+        If TRUE, output is 'with_stemming'.
+        If FALSE, output is 'without_stemming'.
+
+    """
+    return '{}_stemming'.format(('without', 'with')[stemming])
 
 
-# will want an optional parameter for the documents.
-# can set it here
-def train_models(topics, stemming=True):
+def train_models(topics, stemming):
+    """Trains and stores LDA topic models using Scikit Learn
+
+    Parameters
+    ----------
+    topics : list
+        List that indicates different numbers of topics to try.
+        A different model will be trained / saved for each of
+        these values.
+
+    stemming : bool
+        If TRUE, stemming will be applied during preprocessing.
+        If FALSE, stemming will not be applied during preprocessing.
+
+    Returns
+    -------
+    Pickled, trained topic models
+        The number of trained topic models will equal the length
+        of the list set for the 'topics' parameter.
+
+    """
 
     # need two different ways to set directory to pass
     # Travis CI (because .travis file is called from
@@ -89,33 +167,28 @@ def train_models(topics, stemming=True):
     # if not already
     if not os.path.exists("all_articles.txt"):
 
-        flist = glob.glob(os.path.join(data_dir, 'the_dartmouth', '*.txt'))
+        flist = glob.glob(os.path.join(data_dir, 'training_data', '*.txt'))
 
         all_articles = []
 
-        for file in flist:
+        for filename in flist:
 
-            if os.stat(file).st_size != 0:
+            if os.stat(filename).st_size != 0:
 
-                file_text = open(file)
-                text_1 = file_text.read()
+                with open(filename) as file_text:
+                    all_articles.append(file_text.read())
 
-                all_articles.append(text_1)
+        with open('all_articles.txt', 'w') as article_file:
+            article_file.write("\n".join(all_articles))
 
-                file_text.close()
-
-        article_file = open('all_articles.txt', 'w')
-        for article in all_articles:
-            article_file.write("{}\n".format(article))
-        article_file.close()
-
-    all_articles_original = [line.rstrip('\n') for line in open(
-                            'all_articles.txt')]
+    with open('all_articles.txt') as original_text:
+        all_articles_original = [line.rstrip('\n') for line in original_text]
 
     all_articles_preprocessed = []
 
     for doc in all_articles_original:
-        all_articles_preprocessed.append(preprocess_documents(doc))
+        all_articles_preprocessed.append(
+            preprocess_documents(doc, stemming=stemming))
 
     my_additional_stop_words = [
         've', 'll', 'd', 'm', 'o', 're', 'y', 'said',
@@ -145,7 +218,7 @@ def train_models(topics, stemming=True):
         if not os.path.exists(pickle_dir):
             os.makedirs(pickle_dir)
 
-        stemming_info = flag_stemming()
+        stemming_info = flag_stemming(stemming)
 
         print_top_words(
             lda, tf_feature_names, n_component, top_words_dir, stemming_info)
@@ -156,11 +229,15 @@ def train_models(topics, stemming=True):
                     pickle_dir, pickle_filename), 'wb') as pickle_file:
             pickle.dump(lda, pickle_file)
 
+        tf_vectorizer_filename = '{0}_topics_{1}_tf.pkl'.format(
+            n_component, stemming_info)
+        with open(os.path.join(
+                pickle_dir, tf_vectorizer_filename), 'wb') as pickle_file_tf:
+            pickle.dump(tf_vectorizer, pickle_file_tf)
+
 
 if __name__ == '__main__':
-    topics = [int(sys.argv[1])]
-    train_models(topics)
-# having trouble thinking through
-# how to pass 'False' for stemming
-# if I want to give an optional argument
-# to a different function
+    # two versions -- one with stemming applied to the training
+    # documents and one without stemming applied.
+    train_models([10, 15, 20, 25], stemming=True)
+    train_models([10, 15, 20, 25], stemming=False)
