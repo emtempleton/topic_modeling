@@ -1,6 +1,8 @@
 import subprocess
 import os
 
+# Runs entire pipeline at once
+
 current_dir = os.getcwd().split('/')[-2:]
 
 if current_dir == ['topic_modeling', 'topic_modeling']:
