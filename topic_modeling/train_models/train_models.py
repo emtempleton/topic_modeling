@@ -239,5 +239,7 @@ def train_models(topics, stemming):
 if __name__ == '__main__':
     # two versions -- one with stemming applied to the training
     # documents and one without stemming applied.
-    #train_models([5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 70, 80, 90, 100, 150, 200], stemming=True)
+    # train_models([5, 10, 15, 20, 25, 30, 35,
+    # 40, 45, 50, 55, 60, 70, 80, 90, 100, 150,
+    # 200], stemming=True)
     train_models([5], stemming=False)

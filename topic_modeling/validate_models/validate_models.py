@@ -1,8 +1,5 @@
 import os
 import matplotlib
-if os.environ.get('DISPLAY','') == '':
-    print('no display found. Using non-interactive Agg backend')
-    matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 import glob
@@ -15,6 +12,10 @@ from nltk.stem.porter import PorterStemmer
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
+
+if os.environ.get('DISPLAY', '') == '':
+    print('no display found. Using non-interactive Agg backend')
+    matplotlib.use('Agg')
 
 
 def preprocess_documents(doc, stemming):
@@ -113,7 +114,8 @@ def apply_topic_models(stemming):
         model_dir = os.path.join(
             os.getcwd(), 'topic_modeling', 'train_models', 'models_pickles')
 
-    model_list = glob.glob(os.path.join(model_dir, '*{}.pkl').format(stemming_info))
+    model_list = glob.glob(os.path.join(model_dir,
+                                        '*{}.pkl').format(stemming_info))
 
     for topic_model in model_list:
 

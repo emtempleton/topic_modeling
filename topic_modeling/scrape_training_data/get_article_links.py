@@ -50,7 +50,7 @@ def get_article_links(start_year, end_year, num_pages):
                 "=date&direction=desc&begin={}0101&end="
                 "{}1231&page={}&per_page=20".format(year_url, year_url, page))
 
-            #html_page = urllib.request.urlopen(
+            # html_page = urllib.request.urlopen(
             #    "http://www.thedartmouth.com/search?q=0&page={}&"
             #    "ti=0&tg=0&ty=0&ts_month=0&ts_day=0&ts_year={}&"
             #    "te_month=0&te_day=0&te_year={}&s=0&au=0&o=0&"
