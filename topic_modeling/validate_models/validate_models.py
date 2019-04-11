@@ -1,11 +1,15 @@
-import pandas as pd
 import os
+import matplotlib
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import pandas as pd
 import glob
 import re
 import nltk
 import pickle
 import numpy as np
-import matplotlib.pyplot as plt
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
 nltk.download('stopwords')
@@ -96,6 +100,8 @@ def apply_topic_models(stemming):
     # different directory)
     current_file = os.getcwd().split('/')[-1]
 
+    stemming_info = flag_stemming(stemming)
+
     if current_file == 'validate_models':
         base_dir = os.getcwd()
         model_dir = os.path.join(
@@ -107,7 +113,7 @@ def apply_topic_models(stemming):
         model_dir = os.path.join(
             os.getcwd(), 'topic_modeling', 'train_models', 'models_pickles')
 
-    model_list = glob.glob(os.path.join(model_dir, '*ing.pkl'))
+    model_list = glob.glob(os.path.join(model_dir, '*{}.pkl').format(stemming_info))
 
     for topic_model in model_list:
 
@@ -151,8 +157,6 @@ def apply_topic_models(stemming):
                                                    ignore_index=True)
 
         topic_matrix['topic'] = topics
-
-        stemming_info = flag_stemming(stemming)
 
         topic_vector_dir = os.path.join(base_dir,
                                         'topic_vectors_{}'.format(

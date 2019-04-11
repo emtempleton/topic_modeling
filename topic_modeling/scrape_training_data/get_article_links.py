@@ -46,10 +46,15 @@ def get_article_links(start_year, end_year, num_pages):
         for page in pages:
 
             html_page = urllib.request.urlopen(
-                "http://www.thedartmouth.com/search?q=0&page={}&"
-                "ti=0&tg=0&ty=0&ts_month=0&ts_day=0&ts_year={}&"
-                "te_month=0&te_day=0&te_year={}&s=0&au=0&o=0&"
-                "a=1".format(page, year_url, year_url+1))
+                "http://www.thedartmouth.com/search?order"
+                "=date&direction=desc&begin={}0101&end="
+                "{}1231&page={}&per_page=20".format(year_url, year_url, page))
+
+            #html_page = urllib.request.urlopen(
+            #    "http://www.thedartmouth.com/search?q=0&page={}&"
+            #    "ti=0&tg=0&ty=0&ts_month=0&ts_day=0&ts_year={}&"
+            #    "te_month=0&te_day=0&te_year={}&s=0&au=0&o=0&"
+            #    "a=1".format(page, year_url, year_url+1))
 
             # Pause the loop
             sleep(randint(8, 15))
@@ -79,4 +84,4 @@ def get_article_links(start_year, end_year, num_pages):
 
 
 if __name__ == '__main__':
-    get_article_links(start_year=2015, end_year=2016, num_pages=4)
+    get_article_links(start_year=2012, end_year=2019, num_pages=50)

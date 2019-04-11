@@ -1,0 +1,21 @@
+#!/bin/bash -l
+# Queue to use
+#PBS -q default
+# NAME of job
+#PBS -N sync
+# Account resources to use
+#PBS -A DBIC
+# Resources to reserve
+#PBS -l nodes=4:ppn=8
+#PBS -l walltime=50:00:00
+# Send email to this address
+#PBS -M emtempleton@gmail.com
+# When to send defined here
+#PBS -m ea
+# Change to job working directory
+cd $PBS_O_WORKDIR
+module load python/3-Anaconda
+##############################
+# Enter your code to run below
+##############################
+~/.conda/envs/python3/bin/python train_models.py
